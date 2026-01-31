@@ -1,0 +1,76 @@
+[
+  {
+    "repo": "C:\\Users\\Nicita\\Desktop\\AKIRA\\vendors\\langgraph",
+    "types": [
+      "node",
+      "python"
+    ],
+    "manifest_count": 26
+  },
+  {
+    "repo": "C:\\Users\\Nicita\\Desktop\\AKIRA\\vendors\\mem0",
+    "types": [
+      "docker",
+      "node",
+      "python"
+    ],
+    "manifest_count": 61
+  },
+  {
+    "repo": "C:\\Users\\Nicita\\Desktop\\AKIRA\\vendors\\chroma",
+    "types": [
+      "docker",
+      "go",
+      "node",
+      "python",
+      "rust"
+    ],
+    "manifest_count": 97
+  },
+  {
+    "repo": "C:\\Users\\Nicita\\Desktop\\AKIRA\\vendors\\llama_index",
+    "types": [
+      "docker",
+      "node",
+      "python"
+    ],
+    "manifest_count": 836
+  },
+  {
+    "repo": "C:\\Users\\Nicita\\Desktop\\AKIRA\\vendors\\litellm",
+    "types": [
+      "docker",
+      "node",
+      "python",
+      "ruby"
+    ],
+    "manifest_count": 24
+  },
+  {
+    "repo": "C:\\Users\\Nicita\\Desktop\\AKIRA\\vendors\\servers",
+    "types": [
+      "docker",
+      "node",
+      "python"
+    ],
+    "manifest_count": 15
+  },
+  {
+    "repo": "C:\\Users\\Nicita\\Desktop\\AKIRA\\vendors\\n8n",
+    "types": [
+      "docker",
+      "node",
+      "python"
+    ],
+    "manifest_count": 67
+  },
+  {
+    "repo": "C:\\Users\\Nicita\\Desktop\\AKIRA\\vendors\\composio",
+    "types": [
+      "docker",
+      "node",
+      "python"
+    ],
+    "manifest_count": 75
+  }
+]

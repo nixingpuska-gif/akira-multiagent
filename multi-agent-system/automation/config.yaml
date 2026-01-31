@@ -1,0 +1,108 @@
+project_root: C:\Users\Nicita\beauty-salon-saas
+state_dir: .claude/agents
+queue_path: .claude/tasks/auto-queue.json
+output_dir: .claude/tasks/auto-output
+max_concurrency: 30
+max_agents: 50
+
+providers:
+  openai:
+    type: openai_compat
+    base_url: ${OPENAI_BASE_URL:-https://api.openai.com}
+    api_key_env: OPENAI_API_KEY
+    request:
+      endpoint: /v1/chat/completions
+      model: gpt-5.2-codex
+      max_tokens: 2000
+      extra: {}
+  codex:
+    type: openai_responses
+    base_url: ${CODEX_BASE_URL:-https://gpt4.mirbuds.com/codex}
+    api_key_env: CODEX_API_KEY
+    request:
+      endpoint: /responses
+      model: gpt-5.2-codex
+      max_output_tokens: 2000
+      extra: {}
+  claude:
+    type: anthropic
+    base_url: ${ANTHROPIC_BASE_URL:-https://api.anthropic.com}
+    api_key_env: ANTHROPIC_API_KEY
+    request:
+      model: sonnet-4.5
+      temperature: 0.2
+      max_tokens: 2000
+      extra: {}
+
+agents:
+  - role: product-manager
+    count: 1
+    provider: openai
+    system_prompt: .claude/prompts/product-manager.md
+  - role: tech-lead
+    count: 1
+    provider: openai
+    system_prompt: .claude/prompts/tech-lead.md
+  - role: architect
+    count: 1
+    provider: claude
+    system_prompt: .claude/prompts/architect.md
+  - role: researcher
+    count: 1
+    provider: openai
+    system_prompt: .claude/prompts/researcher.md
+  - role: ux-designer
+    count: 1
+    provider: claude
+    system_prompt: .claude/prompts/ux-designer.md
+  - role: visual-designer
+    count: 1
+    provider: claude
+    system_prompt: .claude/prompts/visual-designer.md
+  - role: qa-lead
+    count: 1
+    provider: openai
+    system_prompt: .claude/prompts/tester.md
+  - role: validator
+    count: 1
+    provider: openai
+    system_prompt: .claude/prompts/validator.md
+  - role: komunikator
+    count: 2
+    provider: codex
+    system_prompt: .claude/prompts/komunikator.md
+  - role: koder
+    count: 2
+    provider: codex
+    system_prompt: .claude/prompts/koder.md
+
+  - role: frontend-dev
+    count: 6
+    provider: openai
+    system_prompt: .claude/prompts/frontend-developer.md
+  - role: backend-dev
+    count: 16
+    provider: openai
+    system_prompt: .claude/prompts/backend-developer-1.md
+  - role: integration-dev
+    count: 6
+    provider: openai
+    system_prompt: .claude/prompts/integration-dev.md
+  - role: data-analytics
+    count: 4
+    provider: claude
+    system_prompt: .claude/prompts/data-analyst.md
+  - role: sre-devops
+    count: 3
+    provider: openai
+    system_prompt: .claude/prompts/sre.md
+  - role: ai-bot-dev
+    count: 4
+    provider: claude
+    system_prompt: .claude/prompts/ai-bot-dev.md
+  - role: security
+    count: 3
+    provider: claude
+    system_prompt: .claude/prompts/security.md
+
+project_spec: automation/project_spec.md

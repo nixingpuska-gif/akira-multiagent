@@ -1,0 +1,1251 @@
+2026-01-27 16:56:29,793 - __main__ - INFO - ================================================================================
+2026-01-27 16:56:29,793 - __main__ - INFO - 🚀 AKIRA 4.0 MAIN ORCHESTRATOR INITIALIZING
+2026-01-27 16:56:29,793 - __main__ - INFO - ================================================================================
+2026-01-27 16:56:29,805 - core.financial_heartbeat - INFO - Loaded 0 projects from storage
+2026-01-27 16:56:29,805 - core.api_manager - INFO - Added provider: OpenAI (priority: 1)
+2026-01-27 16:56:29,805 - core.api_manager - INFO - Added provider: Anthropic (priority: 2)
+2026-01-27 16:56:29,805 - core.api_manager - INFO - Added provider: Gemini (priority: 3)
+2026-01-27 16:56:29,805 - core.api_manager - INFO - Added provider: DeepSeek (priority: 4)
+2026-01-27 16:56:29,805 - core.api_manager - INFO - Added provider: OpenRouter (priority: 999)
+2026-01-27 16:56:29,805 - __main__ - INFO - ✅ Setup 5 API providers
+2026-01-27 16:56:29,805 - __main__ - INFO - ✅ All components initialized
+2026-01-27 16:56:29,805 - __main__ - INFO - 
+🚀 Starting first evolution cycle...
+2026-01-27 16:56:29,805 - __main__ - INFO - ================================================================================
+2026-01-27 16:56:29,805 - __main__ - INFO - 🔄 EVOLUTION CYCLE #1 STARTING
+2026-01-27 16:56:29,805 - __main__ - INFO - ================================================================================
+2026-01-27 16:56:29,805 - __main__ - INFO - 
+📝 PHASE 1: CODE GENERATION
+2026-01-27 16:56:29,805 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:56:29,805 - __main__ - INFO - 
+  Generating: data_processor
+2026-01-27 16:56:29,805 - core.self_writing_engine - INFO - Starting code generation for module: data_processor
+2026-01-27 16:56:29,805 - core.self_writing_engine - INFO - Generation attempt 1/3
+2026-01-27 16:56:29,805 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:31,238 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:31,239 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:31,239 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 1
+2026-01-27 16:56:31,239 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmpfujh5ido\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmpfujh5ido/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from data_processor import DataProcessor\nE   ModuleNotFoundError: No module named 'data_processor'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.10s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:31,239 - core.self_writing_engine - INFO - Generation attempt 2/3
+2026-01-27 16:56:31,240 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:32,745 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:32,746 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:32,746 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 2
+2026-01-27 16:56:32,746 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmpv5n0amte\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmpv5n0amte/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from data_processor import DataProcessor\nE   ModuleNotFoundError: No module named 'data_processor'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.11s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:32,746 - core.self_writing_engine - INFO - Generation attempt 3/3
+2026-01-27 16:56:32,747 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:34,390 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:34,390 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:34,391 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 3
+2026-01-27 16:56:34,391 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmpovtd8hfs\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmpovtd8hfs/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from data_processor import DataProcessor\nE   ModuleNotFoundError: No module named 'data_processor'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.12s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:34,391 - core.self_writing_engine - ERROR - ❌ Failed to generate module after 3 attempts
+2026-01-27 16:56:34,391 - __main__ - ERROR -   ❌ Failed: Failed to generate data_processor after 3 attempts
+2026-01-27 16:56:34,391 - __main__ - INFO - 
+  Generating: performance_optimizer
+2026-01-27 16:56:34,391 - core.self_writing_engine - INFO - Starting code generation for module: performance_optimizer
+2026-01-27 16:56:34,391 - core.self_writing_engine - INFO - Generation attempt 1/3
+2026-01-27 16:56:34,391 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:35,830 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:35,830 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:35,830 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 1
+2026-01-27 16:56:35,831 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmpwce0gs_4\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmpwce0gs_4/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from performance_optimizer import PerformanceOptimizer\nE   ModuleNotFoundError: No module named 'performance_optimizer'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.10s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:35,831 - core.self_writing_engine - INFO - Generation attempt 2/3
+2026-01-27 16:56:35,831 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:37,168 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:37,168 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:37,168 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 2
+2026-01-27 16:56:37,168 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmptumxjvhg\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmptumxjvhg/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from performance_optimizer import PerformanceOptimizer\nE   ModuleNotFoundError: No module named 'performance_optimizer'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.09s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:37,168 - core.self_writing_engine - INFO - Generation attempt 3/3
+2026-01-27 16:56:37,169 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:38,399 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:38,399 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:38,399 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 3
+2026-01-27 16:56:38,399 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmpywqf_0b_\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmpywqf_0b_/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from performance_optimizer import PerformanceOptimizer\nE   ModuleNotFoundError: No module named 'performance_optimizer'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.09s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:38,399 - core.self_writing_engine - ERROR - ❌ Failed to generate module after 3 attempts
+2026-01-27 16:56:38,399 - __main__ - ERROR -   ❌ Failed: Failed to generate performance_optimizer after 3 attempts
+2026-01-27 16:56:38,399 - __main__ - INFO - 
+  Generating: security_validator
+2026-01-27 16:56:38,399 - core.self_writing_engine - INFO - Starting code generation for module: security_validator
+2026-01-27 16:56:38,399 - core.self_writing_engine - INFO - Generation attempt 1/3
+2026-01-27 16:56:38,400 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:39,654 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:39,654 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:39,654 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 1
+2026-01-27 16:56:39,654 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmpohxx13da\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmpohxx13da/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from security_validator import SecurityValidator\nE   ModuleNotFoundError: No module named 'security_validator'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.09s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:39,654 - core.self_writing_engine - INFO - Generation attempt 2/3
+2026-01-27 16:56:39,655 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:40,890 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:40,891 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:40,891 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 2
+2026-01-27 16:56:40,891 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmp20j2xg0j\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmp20j2xg0j/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from security_validator import SecurityValidator\nE   ModuleNotFoundError: No module named 'security_validator'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.09s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:40,891 - core.self_writing_engine - INFO - Generation attempt 3/3
+2026-01-27 16:56:40,891 - core.self_writing_engine - INFO - ✅ Syntax validation passed
+2026-01-27 16:56:42,202 - core.self_writing_engine - INFO - Test results: FAILED
+2026-01-27 16:56:42,203 - core.self_writing_engine - INFO - Quality score: 0.50
+2026-01-27 16:56:42,203 - core.self_writing_engine - WARNING - Tests failed or quality too low on attempt 3
+2026-01-27 16:56:42,203 - core.self_writing_engine - WARNING - Test results: {'passed': False, 'output': "============================= test session starts ==============================\nplatform linux -- Python 3.11.0rc1, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/tmpiw5c0ke7\nplugins: langsmith-0.6.6, anyio-4.12.1, asyncio-1.3.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 0 items / 1 error\n\n==================================== ERRORS ====================================\n______________________ ERROR collecting test_generated.py ______________________\nImportError while importing test module '/tmp/tmpiw5c0ke7/test_generated.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.11/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_generated.py:7: in <module>\n    from security_validator import SecurityValidator\nE   ModuleNotFoundError: No module named 'security_validator'\n=========================== short test summary info ============================\nERROR test_generated.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n=============================== 1 error in 0.10s ===============================\n", 'quality_score': 0.5}
+2026-01-27 16:56:42,203 - core.self_writing_engine - ERROR - ❌ Failed to generate module after 3 attempts
+2026-01-27 16:56:42,203 - __main__ - ERROR -   ❌ Failed: Failed to generate security_validator after 3 attempts
+2026-01-27 16:56:42,203 - __main__ - INFO - 
+🔍 PHASE 2: STRICT VALIDATION
+2026-01-27 16:56:42,203 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:56:42,203 - __main__ - INFO - 
+💚 PHASE 3: SYSTEM HEALTH CHECK
+2026-01-27 16:56:42,203 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:56:42,387 - __main__ - INFO -   Redis: ✅
+2026-01-27 16:56:42,387 - __main__ - INFO -   PostgreSQL: ❌
+2026-01-27 16:56:42,388 - __main__ - INFO -   API Server: ❌
+2026-01-27 16:56:42,388 - __main__ - INFO -   Disk Space: ✅
+2026-01-27 16:56:42,388 - __main__ - WARNING -   ⚠️ System issues detected
+2026-01-27 16:56:42,388 - __main__ - INFO - 
+🔌 PHASE 4: API PROVIDER STATUS
+2026-01-27 16:56:42,388 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:56:42,388 - __main__ - INFO -   OpenAI: unknown (priority: 1)
+2026-01-27 16:56:42,388 - __main__ - INFO -   Anthropic: unknown (priority: 2)
+2026-01-27 16:56:42,388 - __main__ - INFO -   Gemini: unknown (priority: 3)
+2026-01-27 16:56:42,388 - __main__ - INFO -   DeepSeek: unknown (priority: 4)
+2026-01-27 16:56:42,388 - __main__ - INFO -   OpenRouter: unknown (priority: 999)
+2026-01-27 16:56:42,388 - __main__ - INFO - 
+💰 PHASE 5: FINANCIAL ANALYSIS
+2026-01-27 16:56:42,388 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:56:42,388 - __main__ - INFO -   Total Projects: 0
+2026-01-27 16:56:42,388 - __main__ - INFO -   Monthly Revenue: $0.00
+2026-01-27 16:56:42,388 - __main__ - INFO -   Net Profit: $0.00
+2026-01-27 16:56:42,388 - __main__ - INFO -   Average ROI: 0.0%
+2026-01-27 16:56:42,388 - __main__ - INFO - 
+📊 PHASE 6: CYCLE SUMMARY
+2026-01-27 16:56:42,388 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:56:42,388 - __main__ - INFO -   Modules Generated: 3
+2026-01-27 16:56:42,388 - __main__ - INFO -   Modules Passed: 0
+2026-01-27 16:56:42,388 - __main__ - INFO -   Modules Failed: 0
+2026-01-27 16:56:42,388 - __main__ - INFO -   Improvements Made: 0
+2026-01-27 16:56:42,388 - __main__ - INFO - 
+================================================================================
+2026-01-27 16:56:42,388 - __main__ - INFO - ✅ EVOLUTION CYCLE #1 COMPLETED SUCCESSFULLY
+2026-01-27 16:56:42,388 - __main__ - INFO - ================================================================================
+2026-01-27 16:56:42,388 - __main__ - INFO - 
+📈 EVOLUTION REPORT:
+2026-01-27 16:56:42,389 - __main__ - INFO - {
+  "timestamp": "2026-01-27T16:56:42.388894",
+  "total_cycles": 1,
+  "successful_cycles": 1,
+  "failed_cycles": 0,
+  "total_modules_generated": 3,
+  "total_modules_passed": 0,
+  "total_modules_failed": 0,
+  "recent_cycles": [
+    {
+      "cycle_number": 1,
+      "start_time": "2026-01-27T16:56:29.805655",
+      "end_time": "2026-01-27T16:56:42.388563",
+      "modules_generated": 3,
+      "modules_passed": 0,
+      "modules_failed": 0,
+      "improvements_made": [],
+      "status": "completed"
+    }
+  ]
+}
+2026-01-27 16:57:09,732 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:09,732 - __main__ - INFO - 🚀 AKIRA 4.0 MAIN ORCHESTRATOR INITIALIZING
+2026-01-27 16:57:09,732 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:09,734 - core.financial_heartbeat - INFO - Loaded 0 projects from storage
+2026-01-27 16:57:09,734 - core.api_manager - INFO - Added provider: OpenAI (priority: 1)
+2026-01-27 16:57:09,734 - core.api_manager - INFO - Added provider: Anthropic (priority: 2)
+2026-01-27 16:57:09,735 - core.api_manager - INFO - Added provider: Gemini (priority: 3)
+2026-01-27 16:57:09,735 - core.api_manager - INFO - Added provider: DeepSeek (priority: 4)
+2026-01-27 16:57:09,735 - core.api_manager - INFO - Added provider: OpenRouter (priority: 999)
+2026-01-27 16:57:09,735 - __main__ - INFO - ✅ Setup 5 API providers
+2026-01-27 16:57:09,735 - __main__ - INFO - ✅ All components initialized
+2026-01-27 16:57:09,735 - __main__ - INFO - 
+🚀 Starting first evolution cycle...
+2026-01-27 16:57:09,735 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:09,735 - __main__ - INFO - 🔄 EVOLUTION CYCLE #1 STARTING
+2026-01-27 16:57:09,735 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:09,735 - __main__ - INFO - 
+📝 PHASE 1: CODE GENERATION
+2026-01-27 16:57:09,735 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:57:09,735 - __main__ - INFO - 
+  Generating: data_processor
+2026-01-27 16:57:09,735 - core.self_writing_engine_v2 - INFO - Generating: data_processor
+2026-01-27 16:57:09,735 - core.self_writing_engine_v2 - INFO -   Attempt 1/3
+2026-01-27 16:57:09,765 - core.self_writing_engine_v2 - INFO -   ✅ SUCCESS on attempt 1
+2026-01-27 16:57:09,765 - core.self_writing_engine_v2 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/data_processor.py
+2026-01-27 16:57:09,765 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/data_processor.py
+2026-01-27 16:57:09,765 - __main__ - INFO - 
+  Generating: performance_optimizer
+2026-01-27 16:57:09,765 - core.self_writing_engine_v2 - INFO - Generating: performance_optimizer
+2026-01-27 16:57:09,766 - core.self_writing_engine_v2 - INFO -   Attempt 1/3
+2026-01-27 16:57:09,793 - core.self_writing_engine_v2 - INFO -   ✅ SUCCESS on attempt 1
+2026-01-27 16:57:09,793 - core.self_writing_engine_v2 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/performance_optimizer.py
+2026-01-27 16:57:09,793 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/performance_optimizer.py
+2026-01-27 16:57:09,793 - __main__ - INFO - 
+  Generating: security_validator
+2026-01-27 16:57:09,793 - core.self_writing_engine_v2 - INFO - Generating: security_validator
+2026-01-27 16:57:09,793 - core.self_writing_engine_v2 - INFO -   Attempt 1/3
+2026-01-27 16:57:09,821 - core.self_writing_engine_v2 - INFO -   ✅ SUCCESS on attempt 1
+2026-01-27 16:57:09,821 - core.self_writing_engine_v2 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/security_validator.py
+2026-01-27 16:57:09,821 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/security_validator.py
+2026-01-27 16:57:09,821 - __main__ - INFO - 
+🔍 PHASE 2: STRICT VALIDATION
+2026-01-27 16:57:09,821 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:57:09,821 - __main__ - INFO - 
+  Validating: data_processor
+2026-01-27 16:57:09,821 - core.strict_test_observer - INFO - 🔍 STRICT VALIDATION STARTING: data_processor
+2026-01-27 16:57:09,821 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:09,821 - core.strict_test_observer - INFO - Step 1: Syntax Validation...
+2026-01-27 16:57:09,821 - core.strict_test_observer - INFO - ✅ Syntax validation PASSED
+2026-01-27 16:57:09,822 - core.strict_test_observer - INFO - Step 2: Import Validation...
+2026-01-27 16:57:09,822 - core.strict_test_observer - INFO - ✅ Import validation PASSED
+2026-01-27 16:57:09,822 - core.strict_test_observer - INFO - Step 3: Code Quality Analysis...
+2026-01-27 16:57:09,822 - core.strict_test_observer - INFO - Quality Score: 1.00/1.0
+2026-01-27 16:57:09,822 - core.strict_test_observer - INFO - Step 4: Running Unit Tests...
+2026-01-27 16:57:10,946 - core.strict_test_observer - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 16:57:10,946 - core.strict_test_observer - INFO - Code Coverage: 0.0%
+2026-01-27 16:57:10,946 - core.strict_test_observer - INFO - Step 5: Integration Testing...
+2026-01-27 16:57:10,947 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 16:57:10,947 - core.strict_test_observer - WARNING - ⚠️ Integration test issues detected
+2026-01-27 16:57:10,947 - core.strict_test_observer - INFO - Step 6: Performance Testing...
+2026-01-27 16:57:10,947 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - ✅ Performance test PASSED
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - Step 7: Security Analysis...
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - ✅ Security check PASSED
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:10,948 - core.strict_test_observer - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:10,948 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 16:57:10,948 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 16:57:10,948 - __main__ - INFO - 
+  Validating: performance_optimizer
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - 🔍 STRICT VALIDATION STARTING: performance_optimizer
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - Step 1: Syntax Validation...
+2026-01-27 16:57:10,948 - core.strict_test_observer - INFO - ✅ Syntax validation PASSED
+2026-01-27 16:57:10,949 - core.strict_test_observer - INFO - Step 2: Import Validation...
+2026-01-27 16:57:10,949 - core.strict_test_observer - INFO - ✅ Import validation PASSED
+2026-01-27 16:57:10,949 - core.strict_test_observer - INFO - Step 3: Code Quality Analysis...
+2026-01-27 16:57:10,949 - core.strict_test_observer - INFO - Quality Score: 1.00/1.0
+2026-01-27 16:57:10,949 - core.strict_test_observer - INFO - Step 4: Running Unit Tests...
+2026-01-27 16:57:12,050 - core.strict_test_observer - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 16:57:12,050 - core.strict_test_observer - INFO - Code Coverage: 0.0%
+2026-01-27 16:57:12,050 - core.strict_test_observer - INFO - Step 5: Integration Testing...
+2026-01-27 16:57:12,051 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 16:57:12,051 - core.strict_test_observer - WARNING - ⚠️ Integration test issues detected
+2026-01-27 16:57:12,051 - core.strict_test_observer - INFO - Step 6: Performance Testing...
+2026-01-27 16:57:12,051 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 16:57:12,051 - core.strict_test_observer - INFO - ✅ Performance test PASSED
+2026-01-27 16:57:12,051 - core.strict_test_observer - INFO - Step 7: Security Analysis...
+2026-01-27 16:57:12,051 - core.strict_test_observer - INFO - ✅ Security check PASSED
+2026-01-27 16:57:12,051 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:12,052 - core.strict_test_observer - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 16:57:12,052 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:12,052 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 16:57:12,052 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 16:57:12,052 - __main__ - INFO - 
+  Validating: security_validator
+2026-01-27 16:57:12,052 - core.strict_test_observer - INFO - 🔍 STRICT VALIDATION STARTING: security_validator
+2026-01-27 16:57:12,052 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:12,052 - core.strict_test_observer - INFO - Step 1: Syntax Validation...
+2026-01-27 16:57:12,052 - core.strict_test_observer - INFO - ✅ Syntax validation PASSED
+2026-01-27 16:57:12,052 - core.strict_test_observer - INFO - Step 2: Import Validation...
+2026-01-27 16:57:12,053 - core.strict_test_observer - INFO - ✅ Import validation PASSED
+2026-01-27 16:57:12,053 - core.strict_test_observer - INFO - Step 3: Code Quality Analysis...
+2026-01-27 16:57:12,053 - core.strict_test_observer - INFO - Quality Score: 1.00/1.0
+2026-01-27 16:57:12,053 - core.strict_test_observer - INFO - Step 4: Running Unit Tests...
+2026-01-27 16:57:13,190 - core.strict_test_observer - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 16:57:13,190 - core.strict_test_observer - INFO - Code Coverage: 0.0%
+2026-01-27 16:57:13,190 - core.strict_test_observer - INFO - Step 5: Integration Testing...
+2026-01-27 16:57:13,191 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 16:57:13,191 - core.strict_test_observer - WARNING - ⚠️ Integration test issues detected
+2026-01-27 16:57:13,191 - core.strict_test_observer - INFO - Step 6: Performance Testing...
+2026-01-27 16:57:13,191 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 16:57:13,191 - core.strict_test_observer - INFO - ✅ Performance test PASSED
+2026-01-27 16:57:13,191 - core.strict_test_observer - INFO - Step 7: Security Analysis...
+2026-01-27 16:57:13,191 - core.strict_test_observer - INFO - ✅ Security check PASSED
+2026-01-27 16:57:13,191 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:13,191 - core.strict_test_observer - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 16:57:13,191 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:57:13,191 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 16:57:13,192 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 16:57:13,192 - __main__ - INFO - 
+💚 PHASE 3: SYSTEM HEALTH CHECK
+2026-01-27 16:57:13,192 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:57:13,327 - __main__ - INFO -   Redis: ✅
+2026-01-27 16:57:13,327 - __main__ - INFO -   PostgreSQL: ❌
+2026-01-27 16:57:13,327 - __main__ - INFO -   API Server: ❌
+2026-01-27 16:57:13,327 - __main__ - INFO -   Disk Space: ✅
+2026-01-27 16:57:13,328 - __main__ - WARNING -   ⚠️ System issues detected
+2026-01-27 16:57:13,328 - __main__ - INFO - 
+🔌 PHASE 4: API PROVIDER STATUS
+2026-01-27 16:57:13,328 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:57:13,328 - __main__ - INFO -   OpenAI: unknown (priority: 1)
+2026-01-27 16:57:13,328 - __main__ - INFO -   Anthropic: unknown (priority: 2)
+2026-01-27 16:57:13,328 - __main__ - INFO -   Gemini: unknown (priority: 3)
+2026-01-27 16:57:13,328 - __main__ - INFO -   DeepSeek: unknown (priority: 4)
+2026-01-27 16:57:13,328 - __main__ - INFO -   OpenRouter: unknown (priority: 999)
+2026-01-27 16:57:13,328 - __main__ - INFO - 
+💰 PHASE 5: FINANCIAL ANALYSIS
+2026-01-27 16:57:13,328 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:57:13,328 - __main__ - INFO -   Total Projects: 0
+2026-01-27 16:57:13,328 - __main__ - INFO -   Monthly Revenue: $0.00
+2026-01-27 16:57:13,328 - __main__ - INFO -   Net Profit: $0.00
+2026-01-27 16:57:13,328 - __main__ - INFO -   Average ROI: 0.0%
+2026-01-27 16:57:13,328 - __main__ - INFO - 
+📊 PHASE 6: CYCLE SUMMARY
+2026-01-27 16:57:13,328 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:57:13,328 - __main__ - INFO -   Modules Generated: 3
+2026-01-27 16:57:13,328 - __main__ - INFO -   Modules Passed: 0
+2026-01-27 16:57:13,328 - __main__ - INFO -   Modules Failed: 3
+2026-01-27 16:57:13,328 - __main__ - INFO -   Improvements Made: 3
+2026-01-27 16:57:13,328 - __main__ - INFO -     • Generated data_processor
+2026-01-27 16:57:13,328 - __main__ - INFO -     • Generated performance_optimizer
+2026-01-27 16:57:13,328 - __main__ - INFO -     • Generated security_validator
+2026-01-27 16:57:13,328 - __main__ - INFO - 
+================================================================================
+2026-01-27 16:57:13,329 - __main__ - INFO - ✅ EVOLUTION CYCLE #1 COMPLETED SUCCESSFULLY
+2026-01-27 16:57:13,329 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:13,329 - __main__ - INFO - 
+📈 EVOLUTION REPORT:
+2026-01-27 16:57:13,329 - __main__ - INFO - {
+  "timestamp": "2026-01-27T16:57:13.329163",
+  "total_cycles": 1,
+  "successful_cycles": 1,
+  "failed_cycles": 0,
+  "total_modules_generated": 3,
+  "total_modules_passed": 0,
+  "total_modules_failed": 3,
+  "recent_cycles": [
+    {
+      "cycle_number": 1,
+      "start_time": "2026-01-27T16:57:09.735372",
+      "end_time": "2026-01-27T16:57:13.328769",
+      "modules_generated": 3,
+      "modules_passed": 0,
+      "modules_failed": 3,
+      "improvements_made": [
+        "Generated data_processor",
+        "Generated performance_optimizer",
+        "Generated security_validator"
+      ],
+      "status": "completed"
+    }
+  ]
+}
+2026-01-27 16:57:46,301 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:46,301 - __main__ - INFO - 🚀 AKIRA 4.0 MAIN ORCHESTRATOR INITIALIZING
+2026-01-27 16:57:46,301 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:46,304 - core.financial_heartbeat - INFO - Loaded 0 projects from storage
+2026-01-27 16:57:46,304 - core.api_manager - INFO - Added provider: OpenAI (priority: 1)
+2026-01-27 16:57:46,304 - core.api_manager - INFO - Added provider: Anthropic (priority: 2)
+2026-01-27 16:57:46,304 - core.api_manager - INFO - Added provider: Gemini (priority: 3)
+2026-01-27 16:57:46,304 - core.api_manager - INFO - Added provider: DeepSeek (priority: 4)
+2026-01-27 16:57:46,304 - core.api_manager - INFO - Added provider: OpenRouter (priority: 999)
+2026-01-27 16:57:46,304 - __main__ - INFO - ✅ Setup 5 API providers
+2026-01-27 16:57:46,304 - __main__ - INFO - ✅ All components initialized
+2026-01-27 16:57:46,304 - __main__ - INFO - 
+🚀 Starting first evolution cycle...
+2026-01-27 16:57:46,304 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:46,304 - __main__ - INFO - 🔄 EVOLUTION CYCLE #1 STARTING
+2026-01-27 16:57:46,304 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:46,304 - __main__ - INFO - 
+📝 PHASE 1: CODE GENERATION
+2026-01-27 16:57:46,304 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:57:46,304 - __main__ - INFO - 
+  Generating: data_processor
+2026-01-27 16:57:46,304 - core.self_writing_engine_v3 - INFO - 🔨 Generating: data_processor
+2026-01-27 16:57:46,304 - core.self_writing_engine_v3 - INFO -    Attempt 1/3
+2026-01-27 16:57:47,442 - core.self_writing_engine_v3 - ERROR - Test error: {str(e)}
+2026-01-27 16:57:47,442 - __main__ - ERROR - 
+❌ EVOLUTION CYCLE #1 FAILED
+2026-01-27 16:57:47,442 - __main__ - ERROR - Error: unhashable type: 'dict'
+2026-01-27 16:57:47,442 - __main__ - INFO - 
+📈 EVOLUTION REPORT:
+2026-01-27 16:57:47,442 - __main__ - INFO - {
+  "timestamp": "2026-01-27T16:57:47.442667",
+  "total_cycles": 1,
+  "successful_cycles": 0,
+  "failed_cycles": 1,
+  "total_modules_generated": 0,
+  "total_modules_passed": 0,
+  "total_modules_failed": 0,
+  "recent_cycles": [
+    {
+      "cycle_number": 1,
+      "start_time": "2026-01-27T16:57:46.304798",
+      "end_time": "2026-01-27T16:57:47.442604",
+      "modules_generated": 0,
+      "modules_passed": 0,
+      "modules_failed": 0,
+      "improvements_made": [],
+      "status": "failed"
+    }
+  ]
+}
+2026-01-27 16:57:58,553 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:58,553 - __main__ - INFO - 🚀 AKIRA 4.0 MAIN ORCHESTRATOR INITIALIZING
+2026-01-27 16:57:58,553 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:58,555 - core.financial_heartbeat - INFO - Loaded 0 projects from storage
+2026-01-27 16:57:58,555 - core.api_manager - INFO - Added provider: OpenAI (priority: 1)
+2026-01-27 16:57:58,555 - core.api_manager - INFO - Added provider: Anthropic (priority: 2)
+2026-01-27 16:57:58,556 - core.api_manager - INFO - Added provider: Gemini (priority: 3)
+2026-01-27 16:57:58,556 - core.api_manager - INFO - Added provider: DeepSeek (priority: 4)
+2026-01-27 16:57:58,556 - core.api_manager - INFO - Added provider: OpenRouter (priority: 999)
+2026-01-27 16:57:58,556 - __main__ - INFO - ✅ Setup 5 API providers
+2026-01-27 16:57:58,556 - __main__ - INFO - ✅ All components initialized
+2026-01-27 16:57:58,556 - __main__ - INFO - 
+🚀 Starting first evolution cycle...
+2026-01-27 16:57:58,556 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:58,556 - __main__ - INFO - 🔄 EVOLUTION CYCLE #1 STARTING
+2026-01-27 16:57:58,556 - __main__ - INFO - ================================================================================
+2026-01-27 16:57:58,556 - __main__ - INFO - 
+📝 PHASE 1: CODE GENERATION
+2026-01-27 16:57:58,556 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:57:58,556 - __main__ - INFO - 
+  Generating: data_processor
+2026-01-27 16:57:58,556 - core.self_writing_engine_v3 - INFO - 🔨 Generating: data_processor
+2026-01-27 16:57:58,556 - core.self_writing_engine_v3 - INFO -    Attempt 1/3
+2026-01-27 16:57:59,685 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:57:59,685 - core.self_writing_engine_v3 - INFO -    Attempt 2/3
+2026-01-27 16:58:00,817 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:58:00,817 - core.self_writing_engine_v3 - INFO -    Attempt 3/3
+2026-01-27 16:58:01,942 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:58:01,942 - core.self_writing_engine_v3 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 16:58:01,942 - __main__ - ERROR -   ❌ Failed: Failed to generate data_processor
+2026-01-27 16:58:01,942 - __main__ - INFO - 
+  Generating: performance_optimizer
+2026-01-27 16:58:01,942 - core.self_writing_engine_v3 - INFO - 🔨 Generating: performance_optimizer
+2026-01-27 16:58:01,942 - core.self_writing_engine_v3 - INFO -    Attempt 1/3
+2026-01-27 16:58:03,084 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:58:03,084 - core.self_writing_engine_v3 - INFO -    Attempt 2/3
+2026-01-27 16:58:04,191 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:58:04,191 - core.self_writing_engine_v3 - INFO -    Attempt 3/3
+2026-01-27 16:58:05,378 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:58:05,378 - core.self_writing_engine_v3 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 16:58:05,378 - __main__ - ERROR -   ❌ Failed: Failed to generate performance_optimizer
+2026-01-27 16:58:05,378 - __main__ - INFO - 
+  Generating: security_validator
+2026-01-27 16:58:05,378 - core.self_writing_engine_v3 - INFO - 🔨 Generating: security_validator
+2026-01-27 16:58:05,378 - core.self_writing_engine_v3 - INFO -    Attempt 1/3
+2026-01-27 16:58:06,567 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:58:06,567 - core.self_writing_engine_v3 - INFO -    Attempt 2/3
+2026-01-27 16:58:07,710 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:58:07,710 - core.self_writing_engine_v3 - INFO -    Attempt 3/3
+2026-01-27 16:58:08,846 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 16:58:08,847 - core.self_writing_engine_v3 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 16:58:08,847 - __main__ - ERROR -   ❌ Failed: Failed to generate security_validator
+2026-01-27 16:58:08,847 - __main__ - INFO - 
+🔍 PHASE 2: STRICT VALIDATION
+2026-01-27 16:58:08,847 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:58:08,847 - __main__ - INFO - 
+  Validating: data_processor
+2026-01-27 16:58:08,847 - core.strict_test_observer - INFO - 🔍 STRICT VALIDATION STARTING: data_processor
+2026-01-27 16:58:08,847 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:08,847 - core.strict_test_observer - INFO - Step 1: Syntax Validation...
+2026-01-27 16:58:08,847 - core.strict_test_observer - INFO - ✅ Syntax validation PASSED
+2026-01-27 16:58:08,847 - core.strict_test_observer - INFO - Step 2: Import Validation...
+2026-01-27 16:58:08,848 - core.strict_test_observer - INFO - ✅ Import validation PASSED
+2026-01-27 16:58:08,848 - core.strict_test_observer - INFO - Step 3: Code Quality Analysis...
+2026-01-27 16:58:08,848 - core.strict_test_observer - INFO - Quality Score: 1.00/1.0
+2026-01-27 16:58:08,848 - core.strict_test_observer - INFO - Step 4: Running Unit Tests...
+2026-01-27 16:58:09,976 - core.strict_test_observer - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 16:58:09,976 - core.strict_test_observer - INFO - Code Coverage: 0.0%
+2026-01-27 16:58:09,976 - core.strict_test_observer - INFO - Step 5: Integration Testing...
+2026-01-27 16:58:09,976 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 16:58:09,976 - core.strict_test_observer - WARNING - ⚠️ Integration test issues detected
+2026-01-27 16:58:09,976 - core.strict_test_observer - INFO - Step 6: Performance Testing...
+2026-01-27 16:58:09,977 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 16:58:09,977 - core.strict_test_observer - INFO - ✅ Performance test PASSED
+2026-01-27 16:58:09,977 - core.strict_test_observer - INFO - Step 7: Security Analysis...
+2026-01-27 16:58:09,977 - core.strict_test_observer - INFO - ✅ Security check PASSED
+2026-01-27 16:58:09,977 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:09,977 - core.strict_test_observer - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 16:58:09,977 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:09,977 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 16:58:09,977 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 16:58:09,977 - __main__ - INFO - 
+  Validating: performance_optimizer
+2026-01-27 16:58:09,977 - core.strict_test_observer - INFO - 🔍 STRICT VALIDATION STARTING: performance_optimizer
+2026-01-27 16:58:09,977 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:09,977 - core.strict_test_observer - INFO - Step 1: Syntax Validation...
+2026-01-27 16:58:09,978 - core.strict_test_observer - INFO - ✅ Syntax validation PASSED
+2026-01-27 16:58:09,978 - core.strict_test_observer - INFO - Step 2: Import Validation...
+2026-01-27 16:58:09,978 - core.strict_test_observer - INFO - ✅ Import validation PASSED
+2026-01-27 16:58:09,978 - core.strict_test_observer - INFO - Step 3: Code Quality Analysis...
+2026-01-27 16:58:09,978 - core.strict_test_observer - INFO - Quality Score: 1.00/1.0
+2026-01-27 16:58:09,978 - core.strict_test_observer - INFO - Step 4: Running Unit Tests...
+2026-01-27 16:58:11,065 - core.strict_test_observer - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 16:58:11,065 - core.strict_test_observer - INFO - Code Coverage: 0.0%
+2026-01-27 16:58:11,066 - core.strict_test_observer - INFO - Step 5: Integration Testing...
+2026-01-27 16:58:11,066 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 16:58:11,066 - core.strict_test_observer - WARNING - ⚠️ Integration test issues detected
+2026-01-27 16:58:11,066 - core.strict_test_observer - INFO - Step 6: Performance Testing...
+2026-01-27 16:58:11,066 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 16:58:11,066 - core.strict_test_observer - INFO - ✅ Performance test PASSED
+2026-01-27 16:58:11,066 - core.strict_test_observer - INFO - Step 7: Security Analysis...
+2026-01-27 16:58:11,066 - core.strict_test_observer - INFO - ✅ Security check PASSED
+2026-01-27 16:58:11,066 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:11,066 - core.strict_test_observer - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 16:58:11,066 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:11,067 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 16:58:11,067 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 16:58:11,067 - __main__ - INFO - 
+  Validating: security_validator
+2026-01-27 16:58:11,067 - core.strict_test_observer - INFO - 🔍 STRICT VALIDATION STARTING: security_validator
+2026-01-27 16:58:11,067 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:11,067 - core.strict_test_observer - INFO - Step 1: Syntax Validation...
+2026-01-27 16:58:11,067 - core.strict_test_observer - INFO - ✅ Syntax validation PASSED
+2026-01-27 16:58:11,067 - core.strict_test_observer - INFO - Step 2: Import Validation...
+2026-01-27 16:58:11,067 - core.strict_test_observer - INFO - ✅ Import validation PASSED
+2026-01-27 16:58:11,067 - core.strict_test_observer - INFO - Step 3: Code Quality Analysis...
+2026-01-27 16:58:11,068 - core.strict_test_observer - INFO - Quality Score: 1.00/1.0
+2026-01-27 16:58:11,068 - core.strict_test_observer - INFO - Step 4: Running Unit Tests...
+2026-01-27 16:58:12,190 - core.strict_test_observer - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 16:58:12,190 - core.strict_test_observer - INFO - Code Coverage: 0.0%
+2026-01-27 16:58:12,190 - core.strict_test_observer - INFO - Step 5: Integration Testing...
+2026-01-27 16:58:12,190 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 16:58:12,190 - core.strict_test_observer - WARNING - ⚠️ Integration test issues detected
+2026-01-27 16:58:12,190 - core.strict_test_observer - INFO - Step 6: Performance Testing...
+2026-01-27 16:58:12,191 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 16:58:12,191 - core.strict_test_observer - INFO - ✅ Performance test PASSED
+2026-01-27 16:58:12,191 - core.strict_test_observer - INFO - Step 7: Security Analysis...
+2026-01-27 16:58:12,191 - core.strict_test_observer - INFO - ✅ Security check PASSED
+2026-01-27 16:58:12,191 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:12,191 - core.strict_test_observer - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 16:58:12,191 - core.strict_test_observer - INFO - ============================================================
+2026-01-27 16:58:12,191 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 16:58:12,191 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 16:58:12,191 - __main__ - INFO - 
+💚 PHASE 3: SYSTEM HEALTH CHECK
+2026-01-27 16:58:12,191 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:58:12,319 - __main__ - INFO -   Redis: ✅
+2026-01-27 16:58:12,319 - __main__ - INFO -   PostgreSQL: ❌
+2026-01-27 16:58:12,319 - __main__ - INFO -   API Server: ❌
+2026-01-27 16:58:12,319 - __main__ - INFO -   Disk Space: ✅
+2026-01-27 16:58:12,319 - __main__ - WARNING -   ⚠️ System issues detected
+2026-01-27 16:58:12,319 - __main__ - INFO - 
+🔌 PHASE 4: API PROVIDER STATUS
+2026-01-27 16:58:12,319 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:58:12,319 - __main__ - INFO -   OpenAI: unknown (priority: 1)
+2026-01-27 16:58:12,319 - __main__ - INFO -   Anthropic: unknown (priority: 2)
+2026-01-27 16:58:12,319 - __main__ - INFO -   Gemini: unknown (priority: 3)
+2026-01-27 16:58:12,319 - __main__ - INFO -   DeepSeek: unknown (priority: 4)
+2026-01-27 16:58:12,319 - __main__ - INFO -   OpenRouter: unknown (priority: 999)
+2026-01-27 16:58:12,319 - __main__ - INFO - 
+💰 PHASE 5: FINANCIAL ANALYSIS
+2026-01-27 16:58:12,319 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:58:12,319 - __main__ - INFO -   Total Projects: 0
+2026-01-27 16:58:12,319 - __main__ - INFO -   Monthly Revenue: $0.00
+2026-01-27 16:58:12,319 - __main__ - INFO -   Net Profit: $0.00
+2026-01-27 16:58:12,320 - __main__ - INFO -   Average ROI: 0.0%
+2026-01-27 16:58:12,320 - __main__ - INFO - 
+📊 PHASE 6: CYCLE SUMMARY
+2026-01-27 16:58:12,320 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 16:58:12,320 - __main__ - INFO -   Modules Generated: 3
+2026-01-27 16:58:12,320 - __main__ - INFO -   Modules Passed: 0
+2026-01-27 16:58:12,320 - __main__ - INFO -   Modules Failed: 3
+2026-01-27 16:58:12,320 - __main__ - INFO -   Improvements Made: 0
+2026-01-27 16:58:12,320 - __main__ - INFO - 
+================================================================================
+2026-01-27 16:58:12,320 - __main__ - INFO - ✅ EVOLUTION CYCLE #1 COMPLETED SUCCESSFULLY
+2026-01-27 16:58:12,320 - __main__ - INFO - ================================================================================
+2026-01-27 16:58:12,320 - __main__ - INFO - 
+📈 EVOLUTION REPORT:
+2026-01-27 16:58:12,320 - __main__ - INFO - {
+  "timestamp": "2026-01-27T16:58:12.320480",
+  "total_cycles": 1,
+  "successful_cycles": 1,
+  "failed_cycles": 0,
+  "total_modules_generated": 3,
+  "total_modules_passed": 0,
+  "total_modules_failed": 3,
+  "recent_cycles": [
+    {
+      "cycle_number": 1,
+      "start_time": "2026-01-27T16:57:58.556440",
+      "end_time": "2026-01-27T16:58:12.320126",
+      "modules_generated": 3,
+      "modules_passed": 0,
+      "modules_failed": 3,
+      "improvements_made": [],
+      "status": "completed"
+    }
+  ]
+}
+2026-01-27 17:02:43,843 - __main__ - INFO - ================================================================================
+2026-01-27 17:02:43,843 - __main__ - INFO - 🚀 AKIRA 4.0 MAIN ORCHESTRATOR INITIALIZING
+2026-01-27 17:02:43,843 - __main__ - INFO - ================================================================================
+2026-01-27 17:02:43,845 - core.financial_heartbeat - INFO - Loaded 0 projects from storage
+2026-01-27 17:02:43,845 - core.api_manager - INFO - Added provider: OpenAI (priority: 1)
+2026-01-27 17:02:43,845 - core.api_manager - INFO - Added provider: Anthropic (priority: 2)
+2026-01-27 17:02:43,846 - core.api_manager - INFO - Added provider: Gemini (priority: 3)
+2026-01-27 17:02:43,846 - core.api_manager - INFO - Added provider: DeepSeek (priority: 4)
+2026-01-27 17:02:43,846 - core.api_manager - INFO - Added provider: OpenRouter (priority: 999)
+2026-01-27 17:02:43,846 - __main__ - INFO - ✅ Setup 5 API providers
+2026-01-27 17:02:43,846 - __main__ - INFO - ✅ All components initialized
+2026-01-27 17:02:43,846 - __main__ - INFO - 
+🚀 Starting first evolution cycle...
+2026-01-27 17:02:43,846 - __main__ - INFO - ================================================================================
+2026-01-27 17:02:43,846 - __main__ - INFO - 🔄 EVOLUTION CYCLE #1 STARTING
+2026-01-27 17:02:43,846 - __main__ - INFO - ================================================================================
+2026-01-27 17:02:43,846 - __main__ - INFO - 
+📝 PHASE 1: CODE GENERATION
+2026-01-27 17:02:43,846 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:02:43,846 - __main__ - INFO - 
+  Generating: data_processor
+2026-01-27 17:02:43,846 - core.self_writing_engine_v3 - INFO - 🔨 Generating: data_processor
+2026-01-27 17:02:43,846 - core.self_writing_engine_v3 - INFO -    Attempt 1/3
+2026-01-27 17:02:44,985 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:44,985 - core.self_writing_engine_v3 - INFO -    Attempt 2/3
+2026-01-27 17:02:46,093 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:46,093 - core.self_writing_engine_v3 - INFO -    Attempt 3/3
+2026-01-27 17:02:47,187 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:47,187 - core.self_writing_engine_v3 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 17:02:47,187 - __main__ - ERROR -   ❌ Failed: Failed to generate data_processor
+2026-01-27 17:02:47,187 - __main__ - INFO - 
+  Generating: performance_optimizer
+2026-01-27 17:02:47,187 - core.self_writing_engine_v3 - INFO - 🔨 Generating: performance_optimizer
+2026-01-27 17:02:47,187 - core.self_writing_engine_v3 - INFO -    Attempt 1/3
+2026-01-27 17:02:48,254 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:48,254 - core.self_writing_engine_v3 - INFO -    Attempt 2/3
+2026-01-27 17:02:49,351 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:49,352 - core.self_writing_engine_v3 - INFO -    Attempt 3/3
+2026-01-27 17:02:50,491 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:50,492 - core.self_writing_engine_v3 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 17:02:50,492 - __main__ - ERROR -   ❌ Failed: Failed to generate performance_optimizer
+2026-01-27 17:02:50,492 - __main__ - INFO - 
+  Generating: security_validator
+2026-01-27 17:02:50,492 - core.self_writing_engine_v3 - INFO - 🔨 Generating: security_validator
+2026-01-27 17:02:50,492 - core.self_writing_engine_v3 - INFO -    Attempt 1/3
+2026-01-27 17:02:51,612 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:51,612 - core.self_writing_engine_v3 - INFO -    Attempt 2/3
+2026-01-27 17:02:52,691 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:52,691 - core.self_writing_engine_v3 - INFO -    Attempt 3/3
+2026-01-27 17:02:53,819 - core.self_writing_engine_v3 - WARNING -    Quality: 0.20 - Retrying...
+2026-01-27 17:02:53,819 - core.self_writing_engine_v3 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 17:02:53,819 - __main__ - ERROR -   ❌ Failed: Failed to generate security_validator
+2026-01-27 17:02:53,819 - __main__ - INFO - 
+🔍 PHASE 2: STRICT VALIDATION
+2026-01-27 17:02:53,819 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:02:53,820 - __main__ - INFO - 
+  Validating: data_processor
+2026-01-27 17:02:53,820 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: data_processor
+2026-01-27 17:02:53,820 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:53,820 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:02:53,820 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:02:53,820 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:02:53,821 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:02:53,821 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:02:53,821 - core.strict_test_observer_v2 - INFO - Quality Score: 0.90/1.0
+2026-01-27 17:02:53,821 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:02:54,945 - core.strict_test_observer_v2 - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 17:02:54,945 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:02:54,945 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:02:54,945 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 17:02:54,945 - core.strict_test_observer_v2 - WARNING - ⚠️ Integration test issues detected
+2026-01-27 17:02:54,945 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:02:54,945 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 17:02:54,945 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:02:54,945 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:02:54,946 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:02:54,946 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:54,946 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:02:54,946 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:54,946 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:02:54,946 - __main__ - ERROR -      Issues: No __all__ definition, Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 17:02:54,946 - __main__ - INFO - 
+  Validating: performance_optimizer
+2026-01-27 17:02:54,946 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: performance_optimizer
+2026-01-27 17:02:54,946 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:54,946 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:02:54,946 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:02:54,947 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:02:54,947 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:02:54,947 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:02:54,947 - core.strict_test_observer_v2 - INFO - Quality Score: 0.90/1.0
+2026-01-27 17:02:54,947 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:02:56,011 - core.strict_test_observer_v2 - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 17:02:56,011 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:02:56,011 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:02:56,011 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 17:02:56,011 - core.strict_test_observer_v2 - WARNING - ⚠️ Integration test issues detected
+2026-01-27 17:02:56,011 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:02:56,011 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:56,012 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:02:56,012 - __main__ - ERROR -      Issues: No __all__ definition, Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 17:02:56,012 - __main__ - INFO - 
+  Validating: security_validator
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: security_validator
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:56,012 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:02:56,013 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:02:56,013 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:02:56,013 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:02:56,013 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:02:56,013 - core.strict_test_observer_v2 - INFO - Quality Score: 0.90/1.0
+2026-01-27 17:02:56,013 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:02:57,082 - core.strict_test_observer_v2 - INFO - Test Results: 0 passed, 0 failed, 0 errors
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:02:57,083 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - WARNING - ⚠️ Integration test issues detected
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:02:57,083 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:02:57,083 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:02:57,083 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:02:57,083 - __main__ - ERROR -      Issues: No __all__ definition, Code coverage 0.0% below minimum 80%, Module missing __all__ definition
+2026-01-27 17:02:57,083 - __main__ - INFO - 
+💚 PHASE 3: SYSTEM HEALTH CHECK
+2026-01-27 17:02:57,083 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:02:57,209 - __main__ - INFO -   Redis: ✅
+2026-01-27 17:02:57,209 - __main__ - INFO -   PostgreSQL: ❌
+2026-01-27 17:02:57,209 - __main__ - INFO -   API Server: ❌
+2026-01-27 17:02:57,209 - __main__ - INFO -   Disk Space: ✅
+2026-01-27 17:02:57,209 - __main__ - WARNING -   ⚠️ System issues detected
+2026-01-27 17:02:57,209 - __main__ - INFO - 
+🔌 PHASE 4: API PROVIDER STATUS
+2026-01-27 17:02:57,209 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:02:57,209 - __main__ - INFO -   OpenAI: unknown (priority: 1)
+2026-01-27 17:02:57,209 - __main__ - INFO -   Anthropic: unknown (priority: 2)
+2026-01-27 17:02:57,209 - __main__ - INFO -   Gemini: unknown (priority: 3)
+2026-01-27 17:02:57,209 - __main__ - INFO -   DeepSeek: unknown (priority: 4)
+2026-01-27 17:02:57,209 - __main__ - INFO -   OpenRouter: unknown (priority: 999)
+2026-01-27 17:02:57,210 - __main__ - INFO - 
+💰 PHASE 5: FINANCIAL ANALYSIS
+2026-01-27 17:02:57,210 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:02:57,210 - __main__ - INFO -   Total Projects: 0
+2026-01-27 17:02:57,210 - __main__ - INFO -   Monthly Revenue: $0.00
+2026-01-27 17:02:57,210 - __main__ - INFO -   Net Profit: $0.00
+2026-01-27 17:02:57,210 - __main__ - INFO -   Average ROI: 0.0%
+2026-01-27 17:02:57,210 - __main__ - INFO - 
+📊 PHASE 6: CYCLE SUMMARY
+2026-01-27 17:02:57,210 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:02:57,210 - __main__ - INFO -   Modules Generated: 3
+2026-01-27 17:02:57,210 - __main__ - INFO -   Modules Passed: 0
+2026-01-27 17:02:57,210 - __main__ - INFO -   Modules Failed: 3
+2026-01-27 17:02:57,210 - __main__ - INFO -   Improvements Made: 0
+2026-01-27 17:02:57,210 - __main__ - INFO - 
+================================================================================
+2026-01-27 17:02:57,210 - __main__ - INFO - ✅ EVOLUTION CYCLE #1 COMPLETED SUCCESSFULLY
+2026-01-27 17:02:57,210 - __main__ - INFO - ================================================================================
+2026-01-27 17:02:57,210 - __main__ - INFO - 
+📈 EVOLUTION REPORT:
+2026-01-27 17:02:57,210 - __main__ - INFO - {
+  "timestamp": "2026-01-27T17:02:57.210629",
+  "total_cycles": 1,
+  "successful_cycles": 1,
+  "failed_cycles": 0,
+  "total_modules_generated": 3,
+  "total_modules_passed": 0,
+  "total_modules_failed": 3,
+  "recent_cycles": [
+    {
+      "cycle_number": 1,
+      "start_time": "2026-01-27T17:02:43.846415",
+      "end_time": "2026-01-27T17:02:57.210340",
+      "modules_generated": 3,
+      "modules_passed": 0,
+      "modules_failed": 3,
+      "improvements_made": [],
+      "status": "completed"
+    }
+  ]
+}
+2026-01-27 17:03:36,388 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:36,388 - __main__ - INFO - 🚀 AKIRA 4.0 MAIN ORCHESTRATOR INITIALIZING
+2026-01-27 17:03:36,388 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:36,391 - core.financial_heartbeat - INFO - Loaded 0 projects from storage
+2026-01-27 17:03:36,391 - core.api_manager - INFO - Added provider: OpenAI (priority: 1)
+2026-01-27 17:03:36,391 - core.api_manager - INFO - Added provider: Anthropic (priority: 2)
+2026-01-27 17:03:36,391 - core.api_manager - INFO - Added provider: Gemini (priority: 3)
+2026-01-27 17:03:36,391 - core.api_manager - INFO - Added provider: DeepSeek (priority: 4)
+2026-01-27 17:03:36,391 - core.api_manager - INFO - Added provider: OpenRouter (priority: 999)
+2026-01-27 17:03:36,391 - __main__ - INFO - ✅ Setup 5 API providers
+2026-01-27 17:03:36,391 - __main__ - INFO - ✅ All components initialized
+2026-01-27 17:03:36,391 - __main__ - INFO - 
+🚀 Starting first evolution cycle...
+2026-01-27 17:03:36,391 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:36,391 - __main__ - INFO - 🔄 EVOLUTION CYCLE #1 STARTING
+2026-01-27 17:03:36,391 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:36,391 - __main__ - INFO - 
+📝 PHASE 1: CODE GENERATION
+2026-01-27 17:03:36,391 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:03:36,391 - __main__ - INFO - 
+  Generating: data_processor
+2026-01-27 17:03:36,391 - core.self_writing_engine_v4 - INFO - 🔨 Generating: data_processor
+2026-01-27 17:03:36,391 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:03:37,544 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:37,544 - core.self_writing_engine_v4 - INFO -    Attempt 2/3
+2026-01-27 17:03:38,695 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:38,695 - core.self_writing_engine_v4 - INFO -    Attempt 3/3
+2026-01-27 17:03:39,788 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:39,789 - core.self_writing_engine_v4 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 17:03:39,789 - __main__ - ERROR -   ❌ Failed: Failed to generate data_processor
+2026-01-27 17:03:39,789 - __main__ - INFO - 
+  Generating: performance_optimizer
+2026-01-27 17:03:39,789 - core.self_writing_engine_v4 - INFO - 🔨 Generating: performance_optimizer
+2026-01-27 17:03:39,789 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:03:40,915 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:40,915 - core.self_writing_engine_v4 - INFO -    Attempt 2/3
+2026-01-27 17:03:42,009 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:42,009 - core.self_writing_engine_v4 - INFO -    Attempt 3/3
+2026-01-27 17:03:43,111 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:43,111 - core.self_writing_engine_v4 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 17:03:43,111 - __main__ - ERROR -   ❌ Failed: Failed to generate performance_optimizer
+2026-01-27 17:03:43,111 - __main__ - INFO - 
+  Generating: security_validator
+2026-01-27 17:03:43,111 - core.self_writing_engine_v4 - INFO - 🔨 Generating: security_validator
+2026-01-27 17:03:43,111 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:03:44,215 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:44,215 - core.self_writing_engine_v4 - INFO -    Attempt 2/3
+2026-01-27 17:03:45,315 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:45,315 - core.self_writing_engine_v4 - INFO -    Attempt 3/3
+2026-01-27 17:03:46,387 - core.self_writing_engine_v4 - WARNING -    Quality: 0.20, Coverage: 0.0% - Retrying...
+2026-01-27 17:03:46,388 - core.self_writing_engine_v4 - ERROR - ❌ Failed after 3 attempts
+2026-01-27 17:03:46,388 - __main__ - ERROR -   ❌ Failed: Failed to generate security_validator
+2026-01-27 17:03:46,388 - __main__ - INFO - 
+🔍 PHASE 2: STRICT VALIDATION
+2026-01-27 17:03:46,388 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:03:46,388 - __main__ - INFO - 
+💚 PHASE 3: SYSTEM HEALTH CHECK
+2026-01-27 17:03:46,388 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:03:46,523 - __main__ - INFO -   Redis: ✅
+2026-01-27 17:03:46,523 - __main__ - INFO -   PostgreSQL: ❌
+2026-01-27 17:03:46,523 - __main__ - INFO -   API Server: ❌
+2026-01-27 17:03:46,524 - __main__ - INFO -   Disk Space: ✅
+2026-01-27 17:03:46,524 - __main__ - WARNING -   ⚠️ System issues detected
+2026-01-27 17:03:46,524 - __main__ - INFO - 
+🔌 PHASE 4: API PROVIDER STATUS
+2026-01-27 17:03:46,524 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:03:46,524 - __main__ - INFO -   OpenAI: unknown (priority: 1)
+2026-01-27 17:03:46,524 - __main__ - INFO -   Anthropic: unknown (priority: 2)
+2026-01-27 17:03:46,524 - __main__ - INFO -   Gemini: unknown (priority: 3)
+2026-01-27 17:03:46,524 - __main__ - INFO -   DeepSeek: unknown (priority: 4)
+2026-01-27 17:03:46,524 - __main__ - INFO -   OpenRouter: unknown (priority: 999)
+2026-01-27 17:03:46,524 - __main__ - INFO - 
+💰 PHASE 5: FINANCIAL ANALYSIS
+2026-01-27 17:03:46,524 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:03:46,524 - __main__ - INFO -   Total Projects: 0
+2026-01-27 17:03:46,524 - __main__ - INFO -   Monthly Revenue: $0.00
+2026-01-27 17:03:46,524 - __main__ - INFO -   Net Profit: $0.00
+2026-01-27 17:03:46,524 - __main__ - INFO -   Average ROI: 0.0%
+2026-01-27 17:03:46,524 - __main__ - INFO - 
+📊 PHASE 6: CYCLE SUMMARY
+2026-01-27 17:03:46,524 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:03:46,524 - __main__ - INFO -   Modules Generated: 3
+2026-01-27 17:03:46,524 - __main__ - INFO -   Modules Passed: 0
+2026-01-27 17:03:46,524 - __main__ - INFO -   Modules Failed: 0
+2026-01-27 17:03:46,524 - __main__ - INFO -   Improvements Made: 0
+2026-01-27 17:03:46,524 - __main__ - INFO - 
+================================================================================
+2026-01-27 17:03:46,525 - __main__ - INFO - ✅ EVOLUTION CYCLE #1 COMPLETED SUCCESSFULLY
+2026-01-27 17:03:46,525 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:46,525 - __main__ - INFO - 
+📈 EVOLUTION REPORT:
+2026-01-27 17:03:46,525 - __main__ - INFO - {
+  "timestamp": "2026-01-27T17:03:46.525151",
+  "total_cycles": 1,
+  "successful_cycles": 1,
+  "failed_cycles": 0,
+  "total_modules_generated": 3,
+  "total_modules_passed": 0,
+  "total_modules_failed": 0,
+  "recent_cycles": [
+    {
+      "cycle_number": 1,
+      "start_time": "2026-01-27T17:03:36.391673",
+      "end_time": "2026-01-27T17:03:46.524817",
+      "modules_generated": 3,
+      "modules_passed": 0,
+      "modules_failed": 0,
+      "improvements_made": [],
+      "status": "completed"
+    }
+  ]
+}
+2026-01-27 17:03:59,356 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:59,356 - __main__ - INFO - 🚀 AKIRA 4.0 MAIN ORCHESTRATOR INITIALIZING
+2026-01-27 17:03:59,356 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:59,358 - core.financial_heartbeat - INFO - Loaded 0 projects from storage
+2026-01-27 17:03:59,358 - core.api_manager - INFO - Added provider: OpenAI (priority: 1)
+2026-01-27 17:03:59,359 - core.api_manager - INFO - Added provider: Anthropic (priority: 2)
+2026-01-27 17:03:59,359 - core.api_manager - INFO - Added provider: Gemini (priority: 3)
+2026-01-27 17:03:59,359 - core.api_manager - INFO - Added provider: DeepSeek (priority: 4)
+2026-01-27 17:03:59,359 - core.api_manager - INFO - Added provider: OpenRouter (priority: 999)
+2026-01-27 17:03:59,359 - __main__ - INFO - ✅ Setup 5 API providers
+2026-01-27 17:03:59,359 - __main__ - INFO - ✅ All components initialized
+2026-01-27 17:03:59,359 - __main__ - INFO - 
+🚀 Starting first evolution cycle...
+2026-01-27 17:03:59,359 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:59,359 - __main__ - INFO - 🔄 EVOLUTION CYCLE #1 STARTING
+2026-01-27 17:03:59,359 - __main__ - INFO - ================================================================================
+2026-01-27 17:03:59,359 - __main__ - INFO - 
+📝 PHASE 1: CODE GENERATION
+2026-01-27 17:03:59,359 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:03:59,359 - __main__ - INFO - 
+  Generating: data_processor
+2026-01-27 17:03:59,359 - core.self_writing_engine_v4 - INFO - 🔨 Generating: data_processor
+2026-01-27 17:03:59,359 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:04:00,758 - core.self_writing_engine_v4 - INFO -    ✅ SUCCESS - Quality: 1.00, Coverage: 92.9%
+2026-01-27 17:04:00,758 - core.self_writing_engine_v4 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/data_processor.py
+2026-01-27 17:04:00,758 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/data_processor.py
+2026-01-27 17:04:00,758 - __main__ - INFO - 
+  Generating: performance_optimizer
+2026-01-27 17:04:00,758 - core.self_writing_engine_v4 - INFO - 🔨 Generating: performance_optimizer
+2026-01-27 17:04:00,758 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:04:02,141 - core.self_writing_engine_v4 - INFO -    ✅ SUCCESS - Quality: 1.00, Coverage: 92.9%
+2026-01-27 17:04:02,141 - core.self_writing_engine_v4 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/performance_optimizer.py
+2026-01-27 17:04:02,141 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/performance_optimizer.py
+2026-01-27 17:04:02,141 - __main__ - INFO - 
+  Generating: security_validator
+2026-01-27 17:04:02,141 - core.self_writing_engine_v4 - INFO - 🔨 Generating: security_validator
+2026-01-27 17:04:02,141 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:04:03,491 - core.self_writing_engine_v4 - INFO -    ✅ SUCCESS - Quality: 1.00, Coverage: 92.9%
+2026-01-27 17:04:03,492 - core.self_writing_engine_v4 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/security_validator.py
+2026-01-27 17:04:03,492 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/security_validator.py
+2026-01-27 17:04:03,492 - __main__ - INFO - 
+🔍 PHASE 2: STRICT VALIDATION
+2026-01-27 17:04:03,492 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:04:03,492 - __main__ - INFO - 
+  Validating: data_processor
+2026-01-27 17:04:03,492 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: data_processor
+2026-01-27 17:04:03,492 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:03,492 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:04:03,493 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:04:03,493 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:04:03,493 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:04:03,493 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:04:03,493 - core.strict_test_observer_v2 - INFO - Quality Score: 1.00/1.0
+2026-01-27 17:04:03,493 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:04:04,859 - core.strict_test_observer_v2 - INFO - Test Results: 19 passed, 0 failed, 0 errors
+2026-01-27 17:04:04,859 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:04:04,859 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:04:04,859 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 17:04:04,859 - core.strict_test_observer_v2 - INFO - ✅ Integration test PASSED
+2026-01-27 17:04:04,859 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:04:04,860 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:04,860 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:04:04,860 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%
+2026-01-27 17:04:04,860 - __main__ - INFO - 
+  Validating: performance_optimizer
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: performance_optimizer
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:04,860 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:04:04,861 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:04:04,861 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:04:04,861 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:04:04,861 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:04:04,861 - core.strict_test_observer_v2 - INFO - Quality Score: 1.00/1.0
+2026-01-27 17:04:04,861 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:04:06,252 - core.strict_test_observer_v2 - INFO - Test Results: 19 passed, 0 failed, 0 errors
+2026-01-27 17:04:06,252 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:04:06,252 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:04:06,252 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 17:04:06,252 - core.strict_test_observer_v2 - INFO - ✅ Integration test PASSED
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:04:06,253 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:06,253 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:04:06,253 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%
+2026-01-27 17:04:06,253 - __main__ - INFO - 
+  Validating: security_validator
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: security_validator
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:06,253 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:04:06,254 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:04:06,254 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:04:06,254 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:04:06,254 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:04:06,254 - core.strict_test_observer_v2 - INFO - Quality Score: 1.00/1.0
+2026-01-27 17:04:06,254 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:04:07,615 - core.strict_test_observer_v2 - INFO - Test Results: 19 passed, 0 failed, 0 errors
+2026-01-27 17:04:07,615 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:04:07,615 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:04:07,616 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 17:04:07,616 - core.strict_test_observer_v2 - INFO - ✅ Integration test PASSED
+2026-01-27 17:04:07,616 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:04:07,616 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 17:04:07,616 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:04:07,616 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:04:07,616 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:04:07,616 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:07,616 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:04:07,616 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:04:07,616 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:04:07,616 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%
+2026-01-27 17:04:07,616 - __main__ - INFO - 
+💚 PHASE 3: SYSTEM HEALTH CHECK
+2026-01-27 17:04:07,616 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:04:07,755 - __main__ - INFO -   Redis: ✅
+2026-01-27 17:04:07,755 - __main__ - INFO -   PostgreSQL: ❌
+2026-01-27 17:04:07,755 - __main__ - INFO -   API Server: ❌
+2026-01-27 17:04:07,755 - __main__ - INFO -   Disk Space: ✅
+2026-01-27 17:04:07,755 - __main__ - WARNING -   ⚠️ System issues detected
+2026-01-27 17:04:07,755 - __main__ - INFO - 
+🔌 PHASE 4: API PROVIDER STATUS
+2026-01-27 17:04:07,755 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:04:07,755 - __main__ - INFO -   OpenAI: unknown (priority: 1)
+2026-01-27 17:04:07,755 - __main__ - INFO -   Anthropic: unknown (priority: 2)
+2026-01-27 17:04:07,755 - __main__ - INFO -   Gemini: unknown (priority: 3)
+2026-01-27 17:04:07,755 - __main__ - INFO -   DeepSeek: unknown (priority: 4)
+2026-01-27 17:04:07,755 - __main__ - INFO -   OpenRouter: unknown (priority: 999)
+2026-01-27 17:04:07,755 - __main__ - INFO - 
+💰 PHASE 5: FINANCIAL ANALYSIS
+2026-01-27 17:04:07,755 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:04:07,755 - __main__ - INFO -   Total Projects: 0
+2026-01-27 17:04:07,755 - __main__ - INFO -   Monthly Revenue: $0.00
+2026-01-27 17:04:07,755 - __main__ - INFO -   Net Profit: $0.00
+2026-01-27 17:04:07,755 - __main__ - INFO -   Average ROI: 0.0%
+2026-01-27 17:04:07,755 - __main__ - INFO - 
+📊 PHASE 6: CYCLE SUMMARY
+2026-01-27 17:04:07,755 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:04:07,756 - __main__ - INFO -   Modules Generated: 3
+2026-01-27 17:04:07,756 - __main__ - INFO -   Modules Passed: 0
+2026-01-27 17:04:07,756 - __main__ - INFO -   Modules Failed: 3
+2026-01-27 17:04:07,756 - __main__ - INFO -   Improvements Made: 3
+2026-01-27 17:04:07,756 - __main__ - INFO -     • Generated data_processor
+2026-01-27 17:04:07,756 - __main__ - INFO -     • Generated performance_optimizer
+2026-01-27 17:04:07,756 - __main__ - INFO -     • Generated security_validator
+2026-01-27 17:04:07,756 - __main__ - INFO - 
+================================================================================
+2026-01-27 17:04:07,756 - __main__ - INFO - ✅ EVOLUTION CYCLE #1 COMPLETED SUCCESSFULLY
+2026-01-27 17:04:07,756 - __main__ - INFO - ================================================================================
+2026-01-27 17:04:07,756 - __main__ - INFO - 
+📈 EVOLUTION REPORT:
+2026-01-27 17:04:07,756 - __main__ - INFO - {
+  "timestamp": "2026-01-27T17:04:07.756558",
+  "total_cycles": 1,
+  "successful_cycles": 1,
+  "failed_cycles": 0,
+  "total_modules_generated": 3,
+  "total_modules_passed": 0,
+  "total_modules_failed": 3,
+  "recent_cycles": [
+    {
+      "cycle_number": 1,
+      "start_time": "2026-01-27T17:03:59.359471",
+      "end_time": "2026-01-27T17:04:07.756033",
+      "modules_generated": 3,
+      "modules_passed": 0,
+      "modules_failed": 3,
+      "improvements_made": [
+        "Generated data_processor",
+        "Generated performance_optimizer",
+        "Generated security_validator"
+      ],
+      "status": "completed"
+    }
+  ]
+}
+2026-01-27 17:24:40,371 - __main__ - INFO - ================================================================================
+2026-01-27 17:24:40,371 - __main__ - INFO - 🚀 AKIRA 4.0 MAIN ORCHESTRATOR INITIALIZING
+2026-01-27 17:24:40,371 - __main__ - INFO - ================================================================================
+2026-01-27 17:24:40,374 - core.financial_heartbeat - INFO - Loaded 0 projects from storage
+2026-01-27 17:24:40,374 - core.legacy_integration_layer - INFO - ✅ Legacy Integration Layer initialized
+2026-01-27 17:24:40,374 - core.legacy_integration_layer - INFO -    - Protocol Omega: ACTIVE
+2026-01-27 17:24:40,374 - core.legacy_integration_layer - INFO -    - Brainfuck Obfuscator: ACTIVE
+2026-01-27 17:24:40,374 - core.legacy_integration_layer - INFO -    - Ghost Mode: ACTIVE
+2026-01-27 17:24:40,374 - core.legacy_integration_layer - INFO -    - Stealth Communication: ACTIVE
+2026-01-27 17:24:40,374 - core.legacy_integration_layer - INFO -    - Self-Defense System: ACTIVE
+2026-01-27 17:24:40,374 - core.api_manager - INFO - Added provider: OpenAI (priority: 1)
+2026-01-27 17:24:40,374 - core.api_manager - INFO - Added provider: Anthropic (priority: 2)
+2026-01-27 17:24:40,374 - core.api_manager - INFO - Added provider: Gemini (priority: 3)
+2026-01-27 17:24:40,374 - core.api_manager - INFO - Added provider: DeepSeek (priority: 4)
+2026-01-27 17:24:40,374 - core.api_manager - INFO - Added provider: OpenRouter (priority: 999)
+2026-01-27 17:24:40,374 - __main__ - INFO - ✅ Setup 5 API providers
+2026-01-27 17:24:40,374 - __main__ - INFO - ✅ All components initialized
+2026-01-27 17:24:40,374 - __main__ - INFO - 
+🚀 Starting first evolution cycle...
+2026-01-27 17:24:40,374 - __main__ - INFO - ================================================================================
+2026-01-27 17:24:40,375 - __main__ - INFO - 🔄 EVOLUTION CYCLE #1 STARTING
+2026-01-27 17:24:40,375 - __main__ - INFO - ================================================================================
+2026-01-27 17:24:40,375 - __main__ - INFO - 
+📝 PHASE 1: CODE GENERATION
+2026-01-27 17:24:40,375 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:24:40,375 - __main__ - INFO - 
+  Generating: data_processor
+2026-01-27 17:24:40,375 - core.self_writing_engine_v4 - INFO - 🔨 Generating: data_processor
+2026-01-27 17:24:40,375 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:24:41,794 - core.self_writing_engine_v4 - INFO -    ✅ SUCCESS - Quality: 1.00, Coverage: 92.9%
+2026-01-27 17:24:41,794 - core.self_writing_engine_v4 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/data_processor.py
+2026-01-27 17:24:41,794 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/data_processor.py
+2026-01-27 17:24:41,794 - __main__ - INFO - 
+  Generating: performance_optimizer
+2026-01-27 17:24:41,794 - core.self_writing_engine_v4 - INFO - 🔨 Generating: performance_optimizer
+2026-01-27 17:24:41,795 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:24:43,185 - core.self_writing_engine_v4 - INFO -    ✅ SUCCESS - Quality: 1.00, Coverage: 92.9%
+2026-01-27 17:24:43,185 - core.self_writing_engine_v4 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/performance_optimizer.py
+2026-01-27 17:24:43,185 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/performance_optimizer.py
+2026-01-27 17:24:43,185 - __main__ - INFO - 
+  Generating: security_validator
+2026-01-27 17:24:43,185 - core.self_writing_engine_v4 - INFO - 🔨 Generating: security_validator
+2026-01-27 17:24:43,185 - core.self_writing_engine_v4 - INFO -    Attempt 1/3
+2026-01-27 17:24:44,647 - core.self_writing_engine_v4 - INFO -    ✅ SUCCESS - Quality: 1.00, Coverage: 92.9%
+2026-01-27 17:24:44,647 - core.self_writing_engine_v4 - INFO - ✅ Saved: /home/ubuntu/akira_4_0/core/security_validator.py
+2026-01-27 17:24:44,648 - __main__ - INFO -   ✅ Generated: /home/ubuntu/akira_4_0/core/security_validator.py
+2026-01-27 17:24:44,648 - __main__ - INFO - 
+🔍 PHASE 2: STRICT VALIDATION
+2026-01-27 17:24:44,648 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:24:44,648 - __main__ - INFO - 
+  Validating: data_processor
+2026-01-27 17:24:44,648 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: data_processor
+2026-01-27 17:24:44,648 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:44,648 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:24:44,649 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:24:44,649 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:24:44,649 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:24:44,649 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:24:44,649 - core.strict_test_observer_v2 - INFO - Quality Score: 1.00/1.0
+2026-01-27 17:24:44,649 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - Test Results: 19 passed, 0 failed, 0 errors
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:24:46,063 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - ✅ Integration test PASSED
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:24:46,063 - data_processor - INFO - Initializing DataProcessor
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:24:46,063 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:46,064 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:24:46,064 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:46,064 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:24:46,064 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%
+2026-01-27 17:24:46,064 - __main__ - INFO - 
+  Validating: performance_optimizer
+2026-01-27 17:24:46,064 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: performance_optimizer
+2026-01-27 17:24:46,064 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:46,064 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:24:46,064 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:24:46,064 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:24:46,065 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:24:46,065 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:24:46,065 - core.strict_test_observer_v2 - INFO - Quality Score: 1.00/1.0
+2026-01-27 17:24:46,065 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:24:47,465 - core.strict_test_observer_v2 - INFO - Test Results: 19 passed, 0 failed, 0 errors
+2026-01-27 17:24:47,465 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:24:47,465 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:24:47,465 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 17:24:47,465 - core.strict_test_observer_v2 - INFO - ✅ Integration test PASSED
+2026-01-27 17:24:47,465 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:24:47,465 - performance_optimizer - INFO - Initializing PerformanceOptimizer
+2026-01-27 17:24:47,465 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:24:47,465 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:24:47,465 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:24:47,466 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:47,466 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:24:47,466 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:47,466 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:24:47,466 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%
+2026-01-27 17:24:47,466 - __main__ - INFO - 
+  Validating: security_validator
+2026-01-27 17:24:47,466 - core.strict_test_observer_v2 - INFO - 🔍 STRICT VALIDATION STARTING: security_validator
+2026-01-27 17:24:47,466 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:47,466 - core.strict_test_observer_v2 - INFO - Step 1: Syntax Validation...
+2026-01-27 17:24:47,466 - core.strict_test_observer_v2 - INFO - ✅ Syntax validation PASSED
+2026-01-27 17:24:47,466 - core.strict_test_observer_v2 - INFO - Step 2: Import Validation...
+2026-01-27 17:24:47,467 - core.strict_test_observer_v2 - INFO - ✅ Import validation PASSED
+2026-01-27 17:24:47,467 - core.strict_test_observer_v2 - INFO - Step 3: Code Quality Analysis...
+2026-01-27 17:24:47,467 - core.strict_test_observer_v2 - INFO - Quality Score: 1.00/1.0
+2026-01-27 17:24:47,467 - core.strict_test_observer_v2 - INFO - Step 4: Running Pytest with Coverage...
+2026-01-27 17:24:48,785 - core.strict_test_observer_v2 - INFO - Test Results: 19 passed, 0 failed, 0 errors
+2026-01-27 17:24:48,785 - core.strict_test_observer_v2 - INFO - Code Coverage: 0.0%
+2026-01-27 17:24:48,785 - core.strict_test_observer_v2 - INFO - Step 5: Integration Testing...
+2026-01-27 17:24:48,786 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 17:24:48,786 - core.strict_test_observer_v2 - INFO - ✅ Integration test PASSED
+2026-01-27 17:24:48,786 - core.strict_test_observer_v2 - INFO - Step 6: Performance Testing...
+2026-01-27 17:24:48,786 - security_validator - INFO - Initializing SecurityValidator
+2026-01-27 17:24:48,786 - core.strict_test_observer_v2 - INFO - ✅ Performance test PASSED
+2026-01-27 17:24:48,786 - core.strict_test_observer_v2 - INFO - Step 7: Security Analysis...
+2026-01-27 17:24:48,786 - core.strict_test_observer_v2 - INFO - ✅ Security check PASSED
+2026-01-27 17:24:48,786 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:48,786 - core.strict_test_observer_v2 - ERROR - ❌❌❌ VALIDATION FAILED - NOT PRODUCTION READY ❌❌❌
+2026-01-27 17:24:48,786 - core.strict_test_observer_v2 - INFO - ============================================================
+2026-01-27 17:24:48,786 - __main__ - ERROR -   ❌ NOT PRODUCTION READY
+2026-01-27 17:24:48,786 - __main__ - ERROR -      Issues: Code coverage 0.0% below minimum 80%
+2026-01-27 17:24:48,786 - __main__ - INFO - 
+💚 PHASE 3: SYSTEM HEALTH CHECK
+2026-01-27 17:24:48,786 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:24:48,924 - __main__ - INFO -   Redis: ✅
+2026-01-27 17:24:48,924 - __main__ - INFO -   PostgreSQL: ❌
+2026-01-27 17:24:48,924 - __main__ - INFO -   API Server: ❌
+2026-01-27 17:24:48,924 - __main__ - INFO -   Disk Space: ✅
+2026-01-27 17:24:48,924 - __main__ - WARNING -   ⚠️ System issues detected
+2026-01-27 17:24:48,924 - __main__ - INFO - 
+🔌 PHASE 4: API PROVIDER STATUS
+2026-01-27 17:24:48,924 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:24:48,924 - __main__ - INFO -   OpenAI: unknown (priority: 1)
+2026-01-27 17:24:48,924 - __main__ - INFO -   Anthropic: unknown (priority: 2)
+2026-01-27 17:24:48,924 - __main__ - INFO -   Gemini: unknown (priority: 3)
+2026-01-27 17:24:48,924 - __main__ - INFO -   DeepSeek: unknown (priority: 4)
+2026-01-27 17:24:48,924 - __main__ - INFO -   OpenRouter: unknown (priority: 999)
+2026-01-27 17:24:48,924 - __main__ - INFO - 
+💰 PHASE 5: FINANCIAL ANALYSIS
+2026-01-27 17:24:48,924 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:24:48,924 - __main__ - INFO -   Total Projects: 0
+2026-01-27 17:24:48,924 - __main__ - INFO -   Monthly Revenue: $0.00
+2026-01-27 17:24:48,925 - __main__ - INFO -   Net Profit: $0.00
+2026-01-27 17:24:48,925 - __main__ - INFO -   Average ROI: 0.0%
+2026-01-27 17:24:48,925 - __main__ - INFO - 
+📊 PHASE 6: CYCLE SUMMARY
+2026-01-27 17:24:48,925 - __main__ - INFO - --------------------------------------------------------------------------------
+2026-01-27 17:24:48,925 - __main__ - INFO -   Modules Generated: 3
+2026-01-27 17:24:48,925 - __main__ - INFO -   Modules Passed: 0
+2026-01-27 17:24:48,925 - __main__ - INFO -   Modules Failed: 3
+2026-01-27 17:24:48,925 - __main__ - INFO -   Improvements Made: 3
+2026-01-27 17:24:48,925 - __main__ - INFO -     • Generated data_processor
+2026-01-27 17:24:48,925 - __main__ - INFO -     • Generated performance_optimizer
+2026-01-27 17:24:48,925 - __main__ - INFO -     • Generated security_validator
+2026-01-27 17:24:48,925 - __main__ - INFO - 
+================================================================================
+2026-01-27 17:24:48,925 - __main__ - INFO - ✅ EVOLUTION CYCLE #1 COMPLETED SUCCESSFULLY
+2026-01-27 17:24:48,925 - __main__ - INFO - ================================================================================
+2026-01-27 17:24:48,925 - __main__ - INFO - 
+📈 EVOLUTION REPORT:
+2026-01-27 17:24:48,925 - __main__ - INFO - {
+  "timestamp": "2026-01-27T17:24:48.925589",
+  "total_cycles": 1,
+  "successful_cycles": 1,
+  "failed_cycles": 0,
+  "total_modules_generated": 3,
+  "total_modules_passed": 0,
+  "total_modules_failed": 3,
+  "recent_cycles": [
+    {
+      "cycle_number": 1,
+      "start_time": "2026-01-27T17:24:40.375093",
+      "end_time": "2026-01-27T17:24:48.925165",
+      "modules_generated": 3,
+      "modules_passed": 0,
+      "modules_failed": 3,
+      "improvements_made": [
+        "Generated data_processor",
+        "Generated performance_optimizer",
+        "Generated security_validator"
+      ],
+      "status": "completed"
+    }
+  ]
+}

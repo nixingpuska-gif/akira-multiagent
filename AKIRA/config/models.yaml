@@ -1,0 +1,22 @@
+# AKIRA Preset Models Configuration
+# Your selected models for quick access
+
+openrouter_api_key: "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"
+telegram_bot_token: "8282517188:AAEmAuh_weSIA4VoWLVfZbPWfaWOPnJ_WSI"
+
+preset_models:
+  1:
+    name: "GLM 4.7 Flash"
+    model: "z-ai/glm-4.7-flash"
+
+  2:
+    name: "Gemini 3 Flash Preview"
+    model: "google/gemini-3-flash-preview"
+
+  3:
+    name: "Grok 4.1 Fast"
+    model: "x-ai/grok-4.1-fast"
+
+  4:
+    name: "GPT-4.1 Mini"
+    model: "openai/gpt-4.1-mini"

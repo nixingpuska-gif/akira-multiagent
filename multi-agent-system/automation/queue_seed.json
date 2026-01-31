@@ -1,0 +1,143 @@
+[
+  {
+    "id": "T001",
+    "title": "Product scope and milestones",
+    "role": "product-manager",
+    "status": "inbox",
+    "priority": 1,
+    "notes": "Define milestones and success criteria."
+  },
+  {
+    "id": "T002",
+    "title": "Architecture blueprint (system components)",
+    "role": "architect",
+    "status": "inbox",
+    "priority": 1
+  },
+  {
+    "id": "T003",
+    "title": "UX flows for booking + internal owner flow",
+    "role": "ux-designer",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T004",
+    "title": "Luxury visual direction and design system tokens",
+    "role": "visual-designer",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T005",
+    "title": "Booking API surface (endpoints, payloads)",
+    "role": "backend-dev",
+    "status": "inbox",
+    "priority": 1
+  },
+  {
+    "id": "T006",
+    "title": "Data model for bookings/clients/staff",
+    "role": "backend-dev",
+    "status": "inbox",
+    "priority": 1
+  },
+  {
+    "id": "T007",
+    "title": "Messaging hub adapter spec for Telegram",
+    "role": "integration-dev",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T008",
+    "title": "Messaging hub adapter spec for Instagram",
+    "role": "integration-dev",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T009",
+    "title": "Messaging hub adapter spec for MAX",
+    "role": "integration-dev",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T010",
+    "title": "SBP QR billing flow and failure handling",
+    "role": "integration-dev",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T011",
+    "title": "AI bot intent map and safety policy",
+    "role": "ai-bot-dev",
+    "status": "inbox",
+    "priority": 1
+  },
+  {
+    "id": "T012",
+    "title": "Escalation policy for aggressive cases",
+    "role": "ai-bot-dev",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T013",
+    "title": "SPM KPI definitions and formulas",
+    "role": "data-analytics",
+    "status": "inbox",
+    "priority": 1
+  },
+  {
+    "id": "T014",
+    "title": "Analytics event schema",
+    "role": "data-analytics",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T015",
+    "title": "SRE deployment topology (2 servers)",
+    "role": "sre-devops",
+    "status": "inbox",
+    "priority": 1
+  },
+  {
+    "id": "T016",
+    "title": "Observability plan (logs/metrics/alerts)",
+    "role": "sre-devops",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T017",
+    "title": "Security risk register and mitigations",
+    "role": "security",
+    "status": "inbox",
+    "priority": 1
+  },
+  {
+    "id": "T018",
+    "title": "Access control model for owner/staff",
+    "role": "security",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T019",
+    "title": "Frontend admin panel module plan",
+    "role": "frontend-dev",
+    "status": "inbox",
+    "priority": 2
+  },
+  {
+    "id": "T020",
+    "title": "QA checklist and acceptance criteria",
+    "role": "qa-lead",
+    "status": "inbox",
+    "priority": 2
+  }
+]

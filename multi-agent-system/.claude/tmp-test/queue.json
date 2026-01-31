@@ -1,0 +1,18 @@
+[
+  {
+    "id": "TEST-KOM-001",
+    "title": "Smoke test: komunikator output",
+    "status": "completed",
+    "role": "komunikator",
+    "priority": 1,
+    "notes": "Provide brief plan and mock TZs based on a tiny fictive scope."
+  },
+  {
+    "id": "TEST-KOD-001",
+    "title": "Smoke test: koder output",
+    "status": "completed",
+    "role": "koder",
+    "priority": 1,
+    "notes": "Provide implementation plan only, no code changes."
+  }
+]

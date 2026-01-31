@@ -1,0 +1,13 @@
+services:
+  akira-core:
+    image: python:3.11-slim
+    container_name: akira_core
+    volumes:
+      - ./:/app
+    working_dir: /app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: sh -c "pip install -r /app/requirements.txt && python app/main.py"
+    restart: always

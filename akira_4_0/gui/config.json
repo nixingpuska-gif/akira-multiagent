@@ -1,0 +1,24 @@
+{
+  "name": "AKIRA Control Center",
+  "version": "4.0.0",
+  "description": "Web-based control interface for AKIRA 4.0",
+  "components": [
+    "Dashboard - Real-time system status",
+    "Evolution Cycles - Monitor code generation",
+    "API Manager - Manage providers and keys",
+    "Financial Heartbeat - Track profitability",
+    "Logs Viewer - Real-time logs",
+    "Settings - System configuration"
+  ],
+  "technologies": [
+    "React",
+    "TypeScript",
+    "TailwindCSS",
+    "WebSocket"
+  ],
+  "ports": {
+    "frontend": 3000,
+    "backend": 8000,
+    "websocket": 8001
+  }
+}

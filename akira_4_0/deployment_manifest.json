@@ -1,0 +1,44 @@
+{
+  "name": "AKIRA 4.0 Deployment Package",
+  "version": "4.0.0",
+  "generated": "2026-01-27T17:29:39.744594",
+  "components": {
+    "docker": {
+      "status": "ready",
+      "files": [
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "windows": {
+      "status": "ready",
+      "files": [
+        "run_akira.bat",
+        "run_akira.ps1"
+      ]
+    },
+    "gui": {
+      "status": "ready",
+      "files": [
+        "config.json"
+      ]
+    },
+    "telegram": {
+      "status": "ready",
+      "files": [
+        "config.json"
+      ]
+    }
+  },
+  "deployment_instructions": {
+    "linux": "docker-compose up -d",
+    "windows": "run_akira.bat or .\\run_akira.ps1",
+    "macos": "docker-compose up -d"
+  },
+  "requirements": {
+    "docker": "20.10+",
+    "python": "3.11+",
+    "redis": "7.0+",
+    "postgresql": "15+"
+  }
+}

@@ -1,0 +1,22 @@
+Структура репозитория (Прямая передача):
+Core (Логика):
+manus_core_logic.py
+manus_server_data_api.ts
+manus_llm_logic.ts
+Security (Защита и Слежка):
+manus_helper_content.js
+manus_dom_checker.js
+Runtime (Среда):
+manus_runtime_config.json
+manus_mobile_runtime.ts
+Infrastructure (Система):
+manus_mcp_startup.sh
+manus_browser_control.sh
+manus_remote_desktop_config.yml
+Research (Медиа и Исследования):
+manus_image_gen.ts
+manus_voice_logic.ts
+Intelligence (Отчеты):
+system_scan_report.md
+quantum_omni_phase2_report.md
+quantum_omni_final_master_report.md

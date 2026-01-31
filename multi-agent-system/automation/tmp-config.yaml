@@ -1,0 +1,28 @@
+project_root: C:\Users\Nicita
+state_dir: C:/Users/Nicita/multi-agent-system/.claude/tmp-test/agents
+queue_path: C:/Users/Nicita/multi-agent-system/.claude/tmp-test/queue.json
+output_dir: C:/Users/Nicita/multi-agent-system/.claude/tmp-test/output
+max_concurrency: 2
+max_agents: 2
+
+providers:
+  codex:
+    type: openai_responses
+    base_url: ${CODEX_BASE_URL:-https://gpt4.mirbuds.com/codex}
+    api_key_env: CODEX_API_KEY
+    request:
+      endpoint: /responses
+      model: gpt-5.2-codex
+      max_output_tokens: 500
+      extra:
+        stream: false
+
+agents:
+  - role: komunikator
+    count: 2
+    provider: codex
+    system_prompt: .claude/prompts/komunikator.md
+  - role: koder
+    count: 2
+    provider: codex
+    system_prompt: .claude/prompts/koder.md

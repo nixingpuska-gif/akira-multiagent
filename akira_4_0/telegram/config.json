@@ -1,0 +1,24 @@
+{
+  "name": "AKIRA Telegram Integration",
+  "version": "4.0.0",
+  "type": "session-based",
+  "features": [
+    "Direct user communication (not bot)",
+    "Command execution",
+    "Status updates",
+    "SOS notifications",
+    "Real-time logs"
+  ],
+  "commands": {
+    "/status": "Get system status",
+    "/logs": "Get recent logs",
+    "/execute": "Execute command",
+    "/restart": "Restart system",
+    "/migrate": "Trigger migration"
+  },
+  "security": {
+    "encryption": "AES-256",
+    "authentication": "session-based",
+    "rate_limiting": true
+  }
+}
