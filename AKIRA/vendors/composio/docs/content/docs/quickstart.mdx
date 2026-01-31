@@ -1,0 +1,366 @@
+---
+title: Quickstart
+description: Build an AI agent with access to 1000+ tools
+keywords: [tutorial, setup, first agent]
+---
+
+Build your first AI agent with Composio Tools.
+
+<QuickstartFlow>
+
+<FrameworkOption id="openai-agents" name="OpenAI Agents" logo="/images/providers/openai-logo.svg" logoDark="/images/providers/openai-logo-dark.svg">
+<Steps>
+<Step>
+### Install
+
+Install the Composio SDK and OpenAI Agents SDK.
+
+<Tabs groupId="language" items={['Python', 'TypeScript']} persist>
+<Tab value="Python">
+```bash
+pip install composio composio-openai-agents openai-agents
+```
+</Tab>
+<Tab value="TypeScript">
+```bash
+npm install @composio/core @composio/openai-agents @openai/agents
+```
+</Tab>
+</Tabs>
+</Step>
+
+<Step>
+### Configure API Keys
+
+<Callout type="info">
+Set `COMPOSIO_API_KEY` with your API key from [Settings](https://platform.composio.dev/?next_page=/settings) and `OPENAI_API_KEY` with your [OpenAI API key](https://platform.openai.com/api-keys).
+</Callout>
+
+```txt title=".env"
+COMPOSIO_API_KEY=xxxxxxxxx
+OPENAI_API_KEY=xxxxxxxxx
+```
+</Step>
+
+<Step>
+### Create session and run agent
+
+[Sessions](/docs/users-and-sessions) are ephemeral, user-scoped and manage connections and tools for that user.
+
+<Callout type="info">
+Replace the sample user ID with your own user's identifier. See [User Management](/docs/user-management) for details.
+</Callout>
+
+<Tabs groupId="language" items={['Python', 'TypeScript']} persist>
+<Tab value="Python">
+```python
+import asyncio
+from composio import Composio
+from agents import Agent, Runner
+from composio_openai_agents import OpenAIAgentsProvider
+
+# Initialize Composio with OpenAI Agents provider
+composio = Composio(provider=OpenAIAgentsProvider())
+
+external_user_id = "user_2nFh83Hd"
+recipient_email = "soham.g@composio.dev"
+
+# Create a tool router session
+session = composio.create(
+    user_id=external_user_id,
+)
+
+# Get tools from the session (native)
+tools = session.tools()
+
+# Create agent with tools
+agent = Agent(
+    name="Email Manager",
+    instructions="You are a helpful assistant that helps users manage their Gmail accounts.",
+    tools=tools,
+)
+
+# Run the agent
+async def main():
+    result = await Runner.run(
+        starting_agent=agent,
+        input=f"Send an email to {recipient_email} with the subject 'Hello from Composio' and the body 'This is a test email!'",
+    )
+    print(result.final_output)
+
+asyncio.run(main())
+```
+</Tab>
+<Tab value="TypeScript">
+```typescript
+import { Composio } from "@composio/core";
+import { Agent, run } from "@openai/agents";
+import { OpenAIAgentsProvider } from "@composio/openai-agents";
+
+// Initialize Composio with OpenAI Agents provider
+const composio = new Composio({
+  provider: new OpenAIAgentsProvider(),
+});
+
+const externalUserId = "user_2nFh83Hd";
+const recipientEmail = "soham.g@composio.dev";
+
+// Create a tool router session
+const session = await composio.create(externalUserId);
+
+// Get tools from the session (native)
+const tools = await session.tools();
+
+// Create agent with tools
+const agent = new Agent({
+  name: "Email Manager",
+  model: "gpt-4o",
+  instructions: "You are a helpful assistant. Use Composio tools to execute tasks.",
+  tools: tools,
+});
+
+// Run the agent
+console.log(`🔄 Running agent...`);
+const result = await run(
+  agent,
+  `Send an email to ${recipientEmail} with the subject 'Hello from Composio' and the body 'This is a test email!'`
+);
+
+console.log(`✅ Received response from agent`);
+if (result.finalOutput) {
+  console.log(result.finalOutput);
+}
+```
+</Tab>
+</Tabs>
+</Step>
+</Steps>
+</FrameworkOption>
+
+<FrameworkOption id="claude-agents" name="Claude Agents" logo="/images/providers/anthropic-logo.svg" logoDark="/images/providers/anthropic-logo-dark.svg">
+<Steps>
+<Step>
+### Install
+
+Install the Composio SDK and Claude Agent SDK.
+
+<Tabs groupId="language" items={['Python', 'TypeScript']} persist>
+<Tab value="Python">
+```bash
+pip install composio composio-claude-agent-sdk claude-agent-sdk
+```
+</Tab>
+<Tab value="TypeScript">
+```bash
+npm install @composio/core @composio/claude-agent-sdk @anthropic-ai/claude-agent-sdk
+```
+</Tab>
+</Tabs>
+</Step>
+
+<Step>
+### Configure API Keys
+
+<Callout type="info">
+Set `COMPOSIO_API_KEY` with your API key from [Settings](https://platform.composio.dev/?next_page=/settings) and `ANTHROPIC_API_KEY` with your [Anthropic API key](https://console.anthropic.com/settings/keys).
+</Callout>
+
+```txt title=".env"
+COMPOSIO_API_KEY=xxxxxxxxx
+ANTHROPIC_API_KEY=xxxxxxxxx
+```
+</Step>
+
+<Step>
+### Create session and run agent
+
+[Sessions](/docs/users-and-sessions) are ephemeral, user-scoped and manage connections and tools for that user.
+
+<Callout type="info">
+Replace the sample user ID with your own user's identifier. See [User Management](/docs/user-management) for details.
+</Callout>
+
+<Tabs groupId="language" items={['Python', 'TypeScript']} persist>
+<Tab value="Python">
+```python
+import asyncio
+from composio import Composio
+from composio_claude_agent_sdk import ClaudeAgentSDKProvider
+from claude_agent_sdk import ClaudeSDKClient, ClaudeAgentOptions, create_sdk_mcp_server
+
+# Initialize Composio
+composio = Composio(provider=ClaudeAgentSDKProvider())
+
+external_user_id = "user_2nFh83Hd"
+recipient_email = "soham.g@composio.dev"
+
+# Create a tool router session
+session = composio.create(
+    user_id=external_user_id,
+)
+
+# Get tools from the session (native)
+tools = session.tools()
+custom_server = create_sdk_mcp_server(name="composio", version="1.0.0", tools=tools)
+
+# Query Claude with MCP tools
+async def main():
+    options = ClaudeAgentOptions(
+        system_prompt="You are a helpful assistant",
+        permission_mode="bypassPermissions",
+        mcp_servers={
+            "composio": custom_server,
+        },
+    )
+
+    async with ClaudeSDKClient(options=options) as client:
+        await client.query(f"Send an email to {recipient_email} with the subject 'Hello from Composio' and the body 'This is a test email!'")
+        # Extract and print response
+        async for msg in client.receive_response():
+            print(msg)
+
+asyncio.run(main())
+```
+</Tab>
+<Tab value="TypeScript">
+```typescript
+import { Composio } from "@composio/core";
+import { ClaudeAgentSDKProvider} from "@composio/claude-agent-sdk";
+import { createSdkMcpServer, query } from "@anthropic-ai/claude-agent-sdk";
+
+// Initialize Composio
+const composio = new Composio({
+  provider: new ClaudeAgentSDKProvider(),
+});
+
+const externalUserId = "user_2nFh83Hd";
+const recipientEmail = "soham.g@composio.dev";
+
+// Create a tool router session
+const session = await composio.create(externalUserId);
+// Get tools from the session (native)
+const tools = await session.tools();
+
+const customServer = createSdkMcpServer({
+  name: "composio",
+  version: "1.0.0",
+  tools: tools,
+});
+
+// Initialize Claude client
+for await (const content of query({
+  prompt: `Send an email to ${recipientEmail} saying hello`,
+  options: {
+    mcpServers: { composio: customServer },
+    permissionMode: "bypassPermissions",
+  },
+})) {
+  if (content.type === "assistant") {
+    console.log("Claude:", content.message);
+  }
+}
+
+console.log(`✅ Received response from Claude`);
+```
+</Tab>
+</Tabs>
+</Step>
+</Steps>
+</FrameworkOption>
+
+<FrameworkOption id="vercel-ai" name="Vercel AI" logo="/images/providers/vercel-logo.svg" logoDark="/images/providers/vercel-logo-dark.svg">
+<Steps>
+<Step>
+### Install
+
+Install the Composio SDK and Vercel AI SDK.
+
+<Tabs groupId="language" items={['TypeScript']} persist>
+<Tab value="TypeScript">
+```bash
+npm install @composio/core @composio/vercel ai @ai-sdk/openai @ai-sdk/mcp
+```
+</Tab>
+</Tabs>
+</Step>
+
+<Step>
+### Configure API Keys
+
+<Callout type="info">
+Set `COMPOSIO_API_KEY` with your API key from [Settings](https://platform.composio.dev/?next_page=/settings) and `OPENAI_API_KEY` with your [OpenAI API key](https://platform.openai.com/api-keys).
+</Callout>
+
+```txt title=".env"
+COMPOSIO_API_KEY=xxxxxxxxx
+OPENAI_API_KEY=xxxxxxxxx
+```
+</Step>
+
+<Step>
+### Create session and run agent
+
+[Sessions](/docs/users-and-sessions) are ephemeral, user-scoped and manage connections and tools for that user.
+
+<Callout type="info">
+Replace the sample user ID with your own user's identifier. See [User Management](/docs/user-management) for details.
+</Callout>
+
+<Tabs groupId="language" items={['TypeScript']} persist>
+<Tab value="TypeScript">
+```typescript
+import { openai } from "@ai-sdk/openai";
+import { Composio } from "@composio/core";
+import { VercelProvider } from "@composio/vercel";
+import { stepCountIs, streamText } from "ai";
+
+// Initialize Composio with Vercel provider
+const composio = new Composio({
+  provider: new VercelProvider(),
+});
+
+const externalUserId = "user_2nFh83Hd";
+const recipientEmail = "soham.g@composio.dev";
+
+// Create a tool router session
+const session = await composio.create(externalUserId);
+
+// Get tools from the session (native)
+const tools = await session.tools();
+
+// Stream text with tools
+console.log(`🔄 Running agent...`);
+const stream = await streamText({
+  model: openai("gpt-4o-mini"),
+  prompt: `Send an email to ${recipientEmail} with the subject 'Hello from Composio' and the body 'This is a test email!'`,
+  stopWhen: stepCountIs(10),
+  tools,
+});
+
+// Stream the response
+for await (const textPart of stream.textStream) {
+  process.stdout.write(textPart);
+}
+```
+</Tab>
+</Tabs>
+</Step>
+</Steps>
+</FrameworkOption>
+
+</QuickstartFlow>
+
+## Next steps
+
+<Cards>
+  <Card
+    title="Session management"
+    href="/docs/users-and-sessions"
+    description="Learn about users, sessions, and how they work."
+  />
+  <Card
+    title="Tools and toolkits"
+    href="/docs/tools-and-toolkits"
+    description="Learn about tools, toolkits, and how to configure them."
+  />
+</Cards>
